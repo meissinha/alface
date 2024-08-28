@@ -1,0 +1,1205 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="1.2.5.1",this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this.t.bind(this),this.touchStartHandler=this.i.bind(this),this.touchMoveHandler=this.o.bind(this),this.touchEndHandler=this.h.bind(this),this.clickHandler=this.u.bind(this),this.interceptedClicks=[],this.interceptedClickListeners=[],this.l(this),window.addEventListener("pageshow",(t=>{this.persisted=t.persisted,this.everythingLoaded&&this.m()})),document.addEventListener("DOMContentLoaded",(()=>{this.p()})),this.delayedScripts={normal:[],async:[],defer:[]},this.trash=[],this.allJQueries=[]}k(t){document.hidden?t.t():(this.triggerEvents.forEach((e=>window.addEventListener(e,t.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",t.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",t.touchStartHandler),document.addEventListener("visibilitychange",t.userEventHandler))}_(){this.triggerEvents.forEach((t=>window.removeEventListener(t,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}i(t){"HTML"!==t.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),t.target.addEventListener("click",this.clickHandler),this.L(t.target,!0),this.M(t.target,"onclick","rocket-onclick"),this.C())}o(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),t.target.removeEventListener("click",this.clickHandler),this.L(t.target,!1),this.M(t.target,"rocket-onclick","onclick"),this.O()}h(){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}u(t){t.target.removeEventListener("click",this.clickHandler),this.L(t.target,!1),this.M(t.target,"rocket-onclick","onclick"),this.interceptedClicks.push(t),t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),this.O()}D(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((t=>{t.target.dispatchEvent(new MouseEvent("click",{view:t.view,bubbles:!0,cancelable:!0}))}))}l(t){EventTarget.prototype.addEventListenerBase=EventTarget.prototype.addEventListener,EventTarget.prototype.addEventListener=function(e,i,o){"click"!==e||t.windowLoaded||i===t.clickHandler||t.interceptedClickListeners.push({target:this,func:i,options:o}),(this||window).addEventListenerBase(e,i,o)}}L(t,e){this.interceptedClickListeners.forEach((i=>{i.target===t&&(e?t.removeEventListener("click",i.func,i.options):t.addEventListener("click",i.func,i.options))})),t.parentNode!==document.documentElement&&this.L(t.parentNode,e)}S(){return new Promise((t=>{this.T?this.O=t:t()}))}C(){this.T=!0}O(){this.T=!1}M(t,e,i){t.hasAttribute&&t.hasAttribute(e)&&(event.target.setAttribute(i,event.target.getAttribute(e)),event.target.removeAttribute(e))}t(){this._(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this.R.bind(this)):this.R()}p(){let t=[];document.querySelectorAll("script[type=rocketlazyloadscript][data-rocket-src]").forEach((e=>{let i=e.getAttribute("data-rocket-src");if(i&&0!==i.indexOf("data:")){0===i.indexOf("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}})),t=[...new Map(t.map((t=>[JSON.stringify(t),t]))).values()],this.j(t,"preconnect")}async R(){this.lastBreath=Date.now(),this.P(this),this.F(this),this.q(),this.A(),this.I(),await this.U(this.delayedScripts.normal),await this.U(this.delayedScripts.defer),await this.U(this.delayedScripts.async);try{await this.W(),await this.H(this),await this.J()}catch(t){console.error(t)}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.S().then((()=>{this.D()})),this.N()}A(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)}))}async B(t){if(await this.G(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise((e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.indexOf("Firefox/")>0||""===navigator.vendor)i=document.createElement("script"),[...t.attributes].forEach((t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))})),t.text&&(i.text=t.text),i.hasAttribute("src")?(i.addEventListener("load",o),i.addEventListener("error",(function(){i.setAttribute("data-rocket-status","failed"),e()})),setTimeout((()=>{i.isConnected||e()}),1)):(i.text=t.text,o()),t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),n=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o),t.addEventListener("error",(function(){t.setAttribute("data-rocket-status","failed"),e()})),n?(t.removeAttribute("data-rocket-src"),t.src=n):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed"),e()}}));t.setAttribute("data-rocket-status","skipped")}async U(t){const e=t.shift();return e&&e.isConnected?(await this.B(e),this.U(t)):Promise.resolve()}I(){this.j([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}j(t,e){var i=document.createDocumentFragment();t.forEach((t=>{const o=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(o){const n=document.createElement("link");n.href=o,n.rel=e,"preconnect"!==e&&(n.as="script"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),i.appendChild(n),this.trash.push(n)}})),document.head.appendChild(i)}P(t){let e={};function i(i,o){return e[o].eventsToRewrite.indexOf(i)>=0&&!t.everythingLoaded?"rocket-"+i:i}function o(t,o){!function(t){e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=i(arguments[0],t),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=i(arguments[0],t),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(o)}function n(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o||function(){},set(n){t.everythingLoaded?o=n:e["rocket"+i]=o=n}})}o(document,"DOMContentLoaded"),o(window,"DOMContentLoaded"),o(window,"load"),o(window,"pageshow"),o(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}F(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map((t=>"load"===t||0===t.indexOf("load.")?"rocket-jquery-load":t)).join(" ")}function o(o){if(o&&o.fn&&!t.allJQueries.includes(o)){o.fn.ready=o.fn.init.prototype.ready=function(e){return t.domReadyFired?e.bind(document)(o):document.addEventListener("rocket-DOMContentLoaded",(()=>e.bind(document)(o))),o([])};const e=o.fn.on;o.fn.on=o.fn.init.prototype.on=function(){return this[0]===window&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e}))),e.apply(this,arguments),this},t.allJQueries.push(o)}e=o}o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}async H(t){const e=document.querySelector("script[data-webpack]");e&&(await async function(){return new Promise((t=>{e.addEventListener("load",t),e.addEventListener("error",t)}))}(),await t.K(),await t.H(t))}async W(){this.domReadyFired=!0,await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.G(),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}async J(){await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),window.dispatchEvent(new Event("rocket-load")),await this.G(),window.rocketonload&&window.rocketonload(),await this.G(),this.allJQueries.forEach((t=>t(window).trigger("rocket-jquery-load"))),await this.G();const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.G(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted}),this.windowLoaded=!0}m(){document.onreadystatechange&&document.onreadystatechange(),window.onload&&window.onload(),window.onpageshow&&window.onpageshow({persisted:this.persisted})}q(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript;i||console.error("WPRocket unable to document.write this: "+e);const o=document.createRange(),n=i.parentElement;let s=t.get(i);void 0===s&&(s=i.nextSibling,t.set(i,s));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),n.insertBefore(c,s)}}async G(){Date.now()-this.lastBreath>45&&(await this.K(),this.lastBreath=Date.now())}async K(){return document.hidden?new Promise((t=>setTimeout(t))):new Promise((t=>requestAnimationFrame(t)))}N(){this.trash.forEach((t=>t.remove()))}static run(){const t=new RocketLazyLoadScripts;t.k(t)}}RocketLazyLoadScripts.run()})();</script>
+    
+    <title>Como plantar alface americana em casa: folhas frescas o ano todo</title><link rel="preload" as="image" href="https://www.petz.com.br/blog/wp-content/uploads/2024/05/alface_3.jpg" fetchpriority="high">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Content-Language" content="pt-br">
+    <meta name="language" content="portuguese, BR, PT">
+    
+
+<meta name="description" content="Aprenda como plantar alface americana com nossas dicas práticas. Descubra como cultivar alface fresca e crocante no seu jardim ou horta doméstica!"/>
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+<link rel="canonical" href="https://www.petz.com.br/blog/plantas/como-plantar-alface-americana/" />
+<meta property="og:locale" content="pt_BR" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Como plantar alface americana em casa: folhas frescas o ano todo" />
+<meta property="og:description" content="Aprenda como plantar alface americana com nossas dicas práticas. Descubra como cultivar alface fresca e crocante no seu jardim ou horta doméstica!" />
+<meta property="og:url" content="https://www.petz.com.br/blog/plantas/como-plantar-alface-americana/" />
+<meta property="og:site_name" content="Blog Petz - Tudo o que você precisa saber sobre o seu bichinho" />
+<meta property="article:section" content="Plantas" />
+<meta property="og:updated_time" content="2024-05-17T11:07:01-03:00" />
+<meta property="og:image" content="https://www.petz.com.br/blog/wp-content/uploads/2024/05/alface_3.jpg" />
+<meta property="og:image:secure_url" content="https://www.petz.com.br/blog/wp-content/uploads/2024/05/alface_3.jpg" />
+<meta property="og:image:width" content="900" />
+<meta property="og:image:height" content="540" />
+<meta property="og:image:alt" content="Alface crespa cortada." />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="article:published_time" content="2024-05-17T11:06:39-03:00" />
+<meta property="article:modified_time" content="2024-05-17T11:07:01-03:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Como plantar alface americana em casa: folhas frescas o ano todo" />
+<meta name="twitter:description" content="Aprenda como plantar alface americana com nossas dicas práticas. Descubra como cultivar alface fresca e crocante no seu jardim ou horta doméstica!" />
+<meta name="twitter:image" content="https://www.petz.com.br/blog/wp-content/uploads/2024/05/alface_3.jpg" />
+<meta name="twitter:label1" content="Escrito por" />
+<meta name="twitter:data1" content="Petz" />
+<meta name="twitter:label2" content="Tempo para leitura" />
+<meta name="twitter:data2" content="4 minutos" />
+<script type="application/ld+json" class="rank-math-schema-pro">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.petz.com.br/blog/#organization","name":"Petz","url":"https://www.petz.com.br/blog"},{"@type":"WebSite","@id":"https://www.petz.com.br/blog/#website","url":"https://www.petz.com.br/blog","name":"Blog Petz - Tudo o que voc\u00ea precisa saber sobre o seu bichinho","alternateName":"Blog Petz - Tudo o que voc\u00ea precisa saber sobre o seu bichinho","publisher":{"@id":"https://www.petz.com.br/blog/#organization"},"inLanguage":"pt-BR"},{"@type":"ImageObject","@id":"https://www.petz.com.br/blog/wp-content/uploads/2024/05/alface_3.jpg","url":"https://www.petz.com.br/blog/wp-content/uploads/2024/05/alface_3.jpg","width":"900","height":"540","caption":"Alface crespa cortada.","inLanguage":"pt-BR"},{"@type":"BreadcrumbList","@id":"https://www.petz.com.br/blog/plantas/como-plantar-alface-americana/#breadcrumb","itemListElement":[{"@type":"ListItem","position":"1","item":{"@id":"https://www.petz.com.br/blog/","name":"Home"}},{"@type":"ListItem","position":"2","item":{"@id":"https://www.petz.com.br/blog/plantas/como-plantar-alface-americana/","name":"Como plantar alface americana"}}]},{"@type":"WebPage","@id":"https://www.petz.com.br/blog/plantas/como-plantar-alface-americana/#webpage","url":"https://www.petz.com.br/blog/plantas/como-plantar-alface-americana/","name":"Como plantar alface americana em casa: folhas frescas o ano todo","datePublished":"2024-05-17T11:06:39-03:00","dateModified":"2024-05-17T11:07:01-03:00","isPartOf":{"@id":"https://www.petz.com.br/blog/#website"},"primaryImageOfPage":{"@id":"https://www.petz.com.br/blog/wp-content/uploads/2024/05/alface_3.jpg"},"inLanguage":"pt-BR","breadcrumb":{"@id":"https://www.petz.com.br/blog/plantas/como-plantar-alface-americana/#breadcrumb"}},{"@type":"Person","@id":"https://www.petz.com.br/blog/plantas/como-plantar-alface-americana/#author","name":"Petz","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/a501f2083cbc4cb2a99aa24f1abf2e26?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/a501f2083cbc4cb2a99aa24f1abf2e26?s=96&amp;d=mm&amp;r=g","caption":"Petz","inLanguage":"pt-BR"},"worksFor":{"@id":"https://www.petz.com.br/blog/#organization"}},{"@type":"BlogPosting","headline":"Como plantar alface americana em casa: folhas frescas o ano todo","keywords":"como plantar alface americana","datePublished":"2024-05-17T11:06:39-03:00","dateModified":"2024-05-17T11:07:01-03:00","author":{"@id":"https://www.petz.com.br/blog/plantas/como-plantar-alface-americana/#author","name":"Petz"},"publisher":{"@id":"https://www.petz.com.br/blog/#organization"},"description":"Aprenda como plantar alface americana com nossas dicas pr\u00e1ticas. Descubra como cultivar alface fresca e crocante no seu jardim ou horta dom\u00e9stica!","name":"Como plantar alface americana em casa: folhas frescas o ano todo","@id":"https://www.petz.com.br/blog/plantas/como-plantar-alface-americana/#richSnippet","isPartOf":{"@id":"https://www.petz.com.br/blog/plantas/como-plantar-alface-americana/#webpage"},"image":{"@id":"https://www.petz.com.br/blog/wp-content/uploads/2024/05/alface_3.jpg"},"inLanguage":"pt-BR","mainEntityOfPage":{"@id":"https://www.petz.com.br/blog/plantas/como-plantar-alface-americana/#webpage"}}]}</script>
+
+
+<link rel="amphtml" href="https://www.petz.com.br/blog/plantas/como-plantar-alface-americana/amp/" /><link rel='dns-prefetch' href='//www.petz.com.br' />
+<link rel='dns-prefetch' href='//cdn.ampproject.org' />
+<link rel='dns-prefetch' href='//js.makestories.io' />
+
+<link rel="alternate" type="application/rss+xml" title="Feed de comentários para Blog Petz &raquo; Como plantar alface americana" href="https://www.petz.com.br/blog/plantas/como-plantar-alface-americana/feed/" />
+<script id="advads-ready">
+			window.advanced_ads_ready=function(e,a){a=a||"complete";var d=function(e){return"interactive"===a?"loading"!==e:"complete"===e};d(document.readyState)?e():document.addEventListener("readystatechange",(function(a){d(a.target.readyState)&&e()}),{once:"interactive"===a})},window.advanced_ads_ready_queue=window.advanced_ads_ready_queue||[];		</script>
+		<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://www.petz.com.br/blog/lib/css/dist/block-library/style.min.css' type='text/css' media='all' />
+<style id='rank-math-toc-block-style-inline-css' type='text/css'>
+.wp-block-rank-math-toc-block nav ol{counter-reset:item}.wp-block-rank-math-toc-block nav ol li{display:block}.wp-block-rank-math-toc-block nav ol li:before{content:counters(item, ".") ". ";counter-increment:item}
+
+</style>
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link data-minify="1" rel='stylesheet' id='style-main-css' href='https://www.petz.com.br/blog/wp-content/cache/min/1/blog/wp-content/plugins/makestories-helper/assets/css/ms-style.css' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='slick-theme-css-css' href='https://www.petz.com.br/blog/wp-content/cache/min/1/blog/wp-content/plugins/makestories-helper/vendor/slick/slick-theme.css' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='slick-css-css' href='https://www.petz.com.br/blog/wp-content/cache/min/1/blog/wp-content/plugins/makestories-helper/vendor/slick/slick.css' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='amp-story-player-css' href='https://www.petz.com.br/blog/wp-content/cache/min/1/amp-story-player-v0.css' type='text/css' media='all' />
+<link rel='stylesheet' id='owl-carousel-style-css' href='https://www.petz.com.br/blog/wp-content/plugins/230ce1bf61/assets/css/owl.carousel.min.css' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='psac-public-style-css' href='https://www.petz.com.br/blog/wp-content/cache/min/1/blog/wp-content/plugins/post-slider-and-carousel/assets/css/psac-public.css' type='text/css' media='all' />
+<style id='rocket-lazyload-inline-css' type='text/css'>
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player:focus-within{outline: 2px solid currentColor;outline-offset: 5px;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:100%;width:100%;left:0;top:0;position:absolute;background:url(https://www.petz.com.br/blog/wp-content/plugins/ffee7df689/assets/img/youtube.png) no-repeat center;background-color: transparent !important;cursor:pointer;border:none;}
+</style>
+<script type="text/javascript" src="https://www.petz.com.br/blog/lib/js/jquery/jquery.min.js" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.petz.com.br/blog/lib/js/jquery/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://www.petz.com.br/blog/wp-content/cache/min/1/amp-story-player-v0.js" id="amp-story-player-js" defer></script>
+<script type="text/javascript" id="advanced-ads-advanced-js-js-extra">
+/* <![CDATA[ */
+var advads_options = {"blog_id":"1","privacy":{"enabled":false,"state":"not_needed"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.petz.com.br/blog/wp-content/plugins/b4f4e8a3a2/public/assets/js/advanced.min.js" id="advanced-ads-advanced-js-js"></script>
+<link rel='shortlink' href='https://www.petz.com.br/blog/?p=2472924' />
+<link rel="alternate" type="application/json+oembed" href="https://www.petz.com.br/blog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.petz.com.br%2Fblog%2Fplantas%2Fcomo-plantar-alface-americana%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.petz.com.br/blog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.petz.com.br%2Fblog%2Fplantas%2Fcomo-plantar-alface-americana%2F&#038;format=xml" />
+
+
+
+<script type="rocketlazyloadscript" async data-rocket-src="https://www.googletagmanager.com/gtag/js?id=UA-58792402-2"></script>
+<script type="rocketlazyloadscript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-58792402-2');
+</script>
+
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript'>
+  window._tfa = window._tfa || [];
+  window._tfa.push({notify: 'event', name: 'page_view', id: 1326100});
+  !function (t, f, a, x) {
+         if (!document.getElementById(x)) {
+            t.async = 1;t.src = a;t.id=x;f.parentNode.insertBefore(t, f);
+         }
+  }(document.createElement('script'),
+  document.getElementsByTagName('script')[0],
+  '//cdn.taboola.com/libtrc/unip/1326100/tfa.js',
+  'tb_tfa_script');
+</script>
+<noscript>
+  <img src='https://trc.taboola.com/1326100/log/3/unip?en=page_view' width='0' height='0' />
+</noscript>
+
+<script type="text/javascript">
+		var advadsCfpQueue = [];
+		var advadsCfpAd = function( adID ){
+			if ( 'undefined' == typeof advadsProCfp ) { advadsCfpQueue.push( adID ) } else { advadsProCfp.addElement( adID ) }
+		};
+		</script>
+		<link rel="icon" href="https://www.petz.com.br/blog/wp-content/uploads/2024/05/cropped-fav-icon-petz-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.petz.com.br/blog/wp-content/uploads/2024/05/cropped-fav-icon-petz-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.petz.com.br/blog/wp-content/uploads/2024/05/cropped-fav-icon-petz-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.petz.com.br/blog/wp-content/uploads/2024/05/cropped-fav-icon-petz-270x270.png" />
+		<style type="text/css" id="wp-custom-css">
+			.breadcrumb{
+	background: transparent!important;
+}
+
+.tags-post .tag{
+	color: #1d1d1d!important;
+}
+
+.eventos-petz .tags-post .tag{
+	color: #fff!important;
+}
+
+.advads-arroba-banner img{
+	width: 100%;
+	height: auto;
+	border-radius: 14px;
+}		</style>
+		<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1">	
+    <link data-minify="1" rel="stylesheet" href="https://www.petz.com.br/blog/wp-content/cache/min/1/fbs3nya.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://www.petz.com.br/blog/themes/4550927d5c/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://www.petz.com.br/blog/themes/4550927d5c/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://www.petz.com.br/blog/themes/4550927d5c/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://www.petz.com.br/blog/themes/4550927d5c/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://www.petz.com.br/blog/themes/4550927d5c/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://www.petz.com.br/blog/themes/4550927d5c/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://www.petz.com.br/blog/themes/4550927d5c/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://www.petz.com.br/blog/themes/4550927d5c/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.petz.com.br/blog/themes/4550927d5c/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="https://www.petz.com.br/blog/themes/4550927d5c/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.petz.com.br/blog/themes/4550927d5c/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://www.petz.com.br/blog/themes/4550927d5c/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.petz.com.br/blog/themes/4550927d5c/favicon/favicon-16x16.png">
+    <link rel="manifest" href="https://www.petz.com.br/blog/themes/4550927d5c/favicon/manifest.json">
+    <meta name="msapplication-TileImage" content="https://www.petz.com.br/blog/themes/4550927d5c/favicon/ms-icon-144x144.png">
+	<link data-minify="1" rel="stylesheet" href="https://www.petz.com.br/blog/wp-content/cache/min/1/blog/wp-content/themes/petz2023/assets/css/plugins/fancybox.css"> 
+    <link data-minify="1" rel="stylesheet" href="https://www.petz.com.br/blog/wp-content/cache/min/1/blog/wp-content/themes/petz2023/assets/css/plugins/swiper.css"> 
+    <link data-minify="1" rel="stylesheet" href="https://www.petz.com.br/blog/wp-content/cache/min/1/blog/wp-content/themes/petz2023/assets/css/fonts.css"> 
+    <link data-minify="1" rel="stylesheet" href="https://www.petz.com.br/blog/wp-content/cache/min/1/blog/wp-content/themes/petz2023/assets/css/style.css"> 
+	
+	<script type="rocketlazyloadscript">
+  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","screen","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware","register"];analytics.factory=function(e){return function(){if(window.analytics.initialized)return window.analytics[e].apply(window.analytics,arguments);var i=Array.prototype.slice.call(arguments);if(["track","screen","alias","group","page","identify"].indexOf(e)>-1){var c=document.querySelector("link[rel='canonical']");i.push({__t:"bpc",c:c&&c.getAttribute("href")||void 0,p:location.pathname,u:location.href,s:location.search,t:document.title,r:document.referrer})}i.unshift(e);analytics.push(i);return analytics}};for(var i=0;i<analytics.methods.length;i++){var key=analytics.methods[i];analytics[key]=analytics.factory(key)}analytics.load=function(key,i){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=i};analytics._writeKey="x7a5ftBXuhYuVkSO32T4PTWpZRv0EESp";;analytics.SNIPPET_VERSION="5.2.0";
+  analytics.load("x7a5ftBXuhYuVkSO32T4PTWpZRv0EESp");
+  analytics.page();
+  }}();
+</script>
+
+
+                              <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="HL2A2-STF8R-5QSCT-95A5E-EM9Q7",function(){function e(){if(!o){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,i.parentNode.appendChild(e),o=!0}}function t(e){o=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(i.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",i.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"HL2A2-STF8R-5QSCT-95A5E-EM9Q7";var i=document.currentScript||document.getElementsByTagName("script")[0],o=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!o)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),i.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="zdexjlyccj73czwpwavq-f-fec8a0de9-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,o={"ak.v":"37","ak.cp":"1517666","ak.ai":parseInt("964679",10),"ak.ol":"0","ak.cr":22,"ak.ipv":4,"ak.proto":"h2","ak.rid":"6cd7817","ak.r":48781,"ak.a2":n,"ak.m":"dscb","ak.n":"ff","ak.bpcip":"200.201.116.0","ak.cport":10005,"ak.gh":"2.18.126.177","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.csrc":"-","ak.acc":"","ak.t":"1724887083","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==hnu+//3ZwxWChhqk6akjaXBH5hPQ0TSJ978p0GVra2PpP4MtxYmElPKwipd/SNgvwTSSQQkupsGOdeWXsnl+zPDF3CgSC4PfHFkfc0U1LaicGJPc1s7VP9RQHmQcTu2G5jojMyyqi7sLyi1qkIilM00Sddmb61N9rebK1rYe12FRDZ8pS9wq2Sdih5N54zTDyW/t1ItGigE9cDP6hu9LJXJ2/ZdhquOqLv9oCFNm4TqgtQs5Tv9Duv7jdISqZdI+vziVioFNlQLzi95WN6Md05zKEw8WfHqrzcK6PYfgkwo035tQKV2uf23BwLjll3DxAssJ0hx7EaFnSfR24kF9a0x+0m+rRLsyZZjL7XI49V/tTfvgsB2EwFx/OL8qM5ocY2zxXttVEy4DS1yrKGDlX+DSgwVrINHDB9ly/2ylSAY=","ak.pv":"51","ak.dpoabenc":"","ak.tf":i};if(""!==t)o["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))o["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(o)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:o,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+<body>
+   <input type="hidden" id="theme_url" value="https://www.petz.com.br/blog/wp-content/themes/petz2023">
+   <input type="hidden" id="ajax_url" value="https://www.petz.com.br/blog/ajax-petz">
+   <header class="clearfix">
+    <div class="container">
+        <div class="top-site">
+
+            <div class="top-mobile visible-mobile">
+             <div class="toggle-menu" js-toggle-menu>
+                <span class="line1"></span>
+                <span class="line2"></span>
+                <span class="line3"></span>
+            </div>
+
+            <a href="https://www.petz.com.br/blog/" title="Ir para home" class="logo">
+                <img width="145" height="59" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20145%2059'%3E%3C/svg%3E" data-lazy-src="https://www.petz.com.br/blog/themes/4550927d5c/assets/images/logo.svg"><noscript><img width="145" height="59" src="https://www.petz.com.br/blog/themes/4550927d5c/assets/images/logo.svg"></noscript>
+            </a>
+
+        </div>
+
+        <div class="top-form">
+
+            <a href="https://www.petz.com.br/blog/" title="Ir para home" class="logo visible-desktop">
+                <img width="145" height="59" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20145%2059'%3E%3C/svg%3E" data-lazy-src="https://www.petz.com.br/blog/themes/4550927d5c/assets/images/logo.svg"><noscript><img width="145" height="59" src="https://www.petz.com.br/blog/themes/4550927d5c/assets/images/logo.svg"></noscript>
+            </a>
+
+            <div class="form">
+                <form action="https://www.petz.com.br/blog/" method="get">
+                    <button type="submit">
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2 9.9375C2 6.07151 5.13401 2.9375 9 2.9375C12.866 2.9375 16 6.07151 16 9.9375C16 11.8234 15.2542 13.5352 14.0414 14.7938C14.0072 14.8202 13.9743 14.849 13.9429 14.8804C13.9115 14.9118 13.8827 14.9447 13.8563 14.9789C12.5977 16.1917 10.8859 16.9375 9 16.9375C5.13401 16.9375 2 13.8035 2 9.9375ZM14.6177 16.9694C13.078 18.201 11.125 18.9375 9 18.9375C4.02944 18.9375 0 14.9081 0 9.9375C0 4.96694 4.02944 0.9375 9 0.9375C13.9706 0.9375 18 4.96694 18 9.9375C18 12.0625 17.2635 14.0155 16.0319 15.5552L19.7071 19.2304C20.0976 19.6209 20.0976 20.2541 19.7071 20.6446C19.3166 21.0351 18.6834 21.0351 18.2929 20.6446L14.6177 16.9694Z" fill="#747474"/>
+                        </svg>
+                    </button>
+                    <input type="text" required autocomplete="off" placeholder="Busque no blog" value="" name="s" title="Buscar por:" />
+                    <input type="text" name="post_type" value="post" class="hidden">
+                </form>
+                <div class="modal-busca visible-desktop">
+                    <div class="titulo-busca">Termos mais buscados</div>
+                    <a href="https://www.petz.com.br/blog/?s=tartaruga+e+reptil&post_type=post" class="item-buscado">
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M2 9.9375C2 6.07151 5.13401 2.9375 9 2.9375C12.866 2.9375 16 6.07151 16 9.9375C16 11.8234 15.2542 13.5352 14.0414 14.7938C14.0072 14.8202 13.9743 14.849 13.9429 14.8804C13.9115 14.9118 13.8827 14.9447 13.8563 14.9789C12.5977 16.1917 10.8859 16.9375 9 16.9375C5.13401 16.9375 2 13.8035 2 9.9375ZM14.6177 16.9694C13.078 18.201 11.125 18.9375 9 18.9375C4.02944 18.9375 0 14.9081 0 9.9375C0 4.96694 4.02944 0.9375 9 0.9375C13.9706 0.9375 18 4.96694 18 9.9375C18 12.0625 17.2635 14.0155 16.0319 15.5552L19.7071 19.2304C20.0976 19.6209 20.0976 20.2541 19.7071 20.6446C19.3166 21.0351 18.6834 21.0351 18.2929 20.6446L14.6177 16.9694Z" fill="#454545"/>
+</svg>
+tartaruga é réptil
+                    </a>
+                    <a href="https://www.petz.com.br/blog/?s=cachorro+pode+comer+chocolate&post_type=post" class="item-buscado">
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M2 9.9375C2 6.07151 5.13401 2.9375 9 2.9375C12.866 2.9375 16 6.07151 16 9.9375C16 11.8234 15.2542 13.5352 14.0414 14.7938C14.0072 14.8202 13.9743 14.849 13.9429 14.8804C13.9115 14.9118 13.8827 14.9447 13.8563 14.9789C12.5977 16.1917 10.8859 16.9375 9 16.9375C5.13401 16.9375 2 13.8035 2 9.9375ZM14.6177 16.9694C13.078 18.201 11.125 18.9375 9 18.9375C4.02944 18.9375 0 14.9081 0 9.9375C0 4.96694 4.02944 0.9375 9 0.9375C13.9706 0.9375 18 4.96694 18 9.9375C18 12.0625 17.2635 14.0155 16.0319 15.5552L19.7071 19.2304C20.0976 19.6209 20.0976 20.2541 19.7071 20.6446C19.3166 21.0351 18.6834 21.0351 18.2929 20.6446L14.6177 16.9694Z" fill="#454545"/>
+</svg>
+cachorro pode comer chocolate?
+                    </a>
+                    <div class="titulo-busca">Artigos sugeridos</div>
+
+                    <div class="grid-artigos">
+
+                                                        <div class="post">
+                                    <div class="tags-post">
+                                                                                    <div class="tag cachorros">Cachorros</div>
+                                                                                    <div class="tag caes">Cães</div>
+                                                                            </div>
+                                    <a href="https://www.petz.com.br/blog/dicas/nomes-para-cachorro/">
+                                        <h3>Nomes para cachorro: escolha o que mais combina com seu peludo!</h3>
+                                        <span>15 abr 2024</span>
+                                    </a>
+                                </div>
+
+                                                            <div class="post">
+                                    <div class="tags-post">
+                                                                                    <div class="tag gatos-racas">Gatos Raças</div>
+                                                                                    <div class="tag racas">Raças</div>
+                                                                            </div>
+                                    <a href="https://www.petz.com.br/blog/racas/gatos-racas/nomes-para-gatos-400-ideias-criativas/">
+                                        <h3>Nomes para gatos: opções ideais para chamar o seu bichano</h3>
+                                        <span>20 maio 2022</span>
+                                    </a>
+                                </div>
+
+                                                            <div class="post">
+                                    <div class="tags-post">
+                                                                                    <div class="tag curiosidades">Curiosidades</div>
+                                                                                    <div class="tag especies">Espécies</div>
+                                                                            </div>
+                                    <a href="https://www.petz.com.br/blog/curiosidades/quais-sao-os-animais-que-botam-ovo/">
+                                        <h3>Quais são os animais que botam ovo?</h3>
+                                        <span>4 out 2022</span>
+                                    </a>
+                                </div>
+
+                            
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <nav>
+
+           <div class="visible-mobile logo">
+            <img width="94" height="35" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2094%2035'%3E%3C/svg%3E" alt="" data-lazy-src="https://www.petz.com.br/blog/themes/4550927d5c/assets/images/logo-mobile-topo.svg"><noscript><img width="94" height="35" src="https://www.petz.com.br/blog/themes/4550927d5c/assets/images/logo-mobile-topo.svg" alt=""></noscript>
+        </div>
+
+				
+<ul id="menu-categorias" class="menu"><li id="menu-item-2390754" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2390754"><a href="https://www.petz.com.br/blog/adocao/">Adoção</a></li>
+<li id="menu-item-2390764" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2390764"><a href="https://www.petz.com.br/blog/pets/aquarismo/">Aquarismo</a></li>
+<li id="menu-item-2390759" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2390759"><a href="https://www.petz.com.br/blog/pets/caes/">Cães</a></li>
+<li id="menu-item-2390760" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2390760"><a href="https://www.petz.com.br/blog/pets/gatos/">Gatos</a></li>
+<li id="menu-item-2437143" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2437143"><a href="https://www.petz.com.br/blog/especies/">Espécies</a></li>
+<li id="menu-item-2390761" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2390761"><a href="https://www.petz.com.br/blog/bem-estar/">Bem-Estar</a></li>
+<li id="menu-item-2439257" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2439257"><a href="https://www.petz.com.br/blog/posse-responsavel/">Posse responsável</a></li>
+<li id="menu-item-2465080" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2465080"><a href="https://www.petz.com.br/blog/eventos-petz/">Eventos Petz</a></li>
+<li id="menu-item-2460905" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2460905"><a href="https://www.petz.com.br/blog/dr-pet/">Dr Pet</a></li>
+</ul>
+</nav>
+
+</div>
+</div>
+</header>
+
+<main id="single-blog">
+	<div class="container">
+
+		<div class="breadcrumb">
+			<a href="https://www.petz.com.br/blog/">Home</a>
+			<svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M1.09977 7.46654C0.699772 7.46654 0.433105 7.19987 0.433105 6.79987C0.433105 6.59987 0.499772 6.46654 0.633106 6.3332L2.96644 3.99987L0.633106 1.66654C0.366439 1.39987 0.366439 0.99987 0.633106 0.733203C0.899772 0.466536 1.29977 0.466536 1.56644 0.733203L4.36644 3.5332C4.63311 3.79987 4.63311 4.19987 4.36644 4.46654L1.56644 7.26654C1.43311 7.39987 1.23311 7.46654 1.09977 7.46654Z" fill="#454545"/>
+</svg>			<a href="" class="no-events">Plantas</a>
+		</div>
+
+		<div class="content">
+
+			<div class="topo">
+
+								<a href="https://www.petz.com.br/blog/plantas/" style='background: #999c5f; border-color: #999c5f; color: #1d1d1d;' class="tag plantas">Plantas</a>
+
+				<h1 class="titulo">
+					Como plantar alface americana				</h1>	
+
+				<strong>Publicado em 17 de maio de 2024</strong>
+				<p class="visible-desktop">Tempo de leitura: 4min</p>
+
+				
+				
+
+
+
+			</div>
+
+			<img fetchpriority="high" width="900" height="540" src="https://www.petz.com.br/blog/wp-content/uploads/2024/05/alface_3.jpg" alt="" class="img-topo">
+
+			<div class="editor">
+				<p><span style="font-weight: 400;">A alface americana é uma das hortaliças mais populares do mundo, apreciada por suas folhas crocantes, sabor suave e versatilidade na culinária. Cultivá-la em casa é uma tarefa acessível, mesmo para quem não tem muita experiência em </span><a href="https://www.petz.com.br/blog/plantas/tudo-sobre-jardinagem/"><span style="font-weight: 400;">jardinagem</span></a><span style="font-weight: 400;">. Confira aqui, como plantar alface americana com sucesso e desfrutar de suas próprias colheitas frescas e saborosas.</span></p>
+<p><span style="font-weight: 400;"><img fetchpriority="high" decoding="async" class="size-full wp-image-2472927 aligncenter" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20900%20540'%3E%3C/svg%3E" alt="Alface americana cortada." width="900" height="540" title="Como plantar alface americana 1" data-lazy-srcset="https://www.petz.com.br/blog/wp-content/uploads/2024/05/alface_1.jpg 900w, https://www.petz.com.br/blog/wp-content/uploads/2024/05/alface_1-300x180.jpg 300w, https://www.petz.com.br/blog/wp-content/uploads/2024/05/alface_1-768x461.jpg 768w, https://www.petz.com.br/blog/wp-content/uploads/2024/05/alface_1-150x90.jpg 150w" data-lazy-sizes="(max-width: 900px) 100vw, 900px" data-lazy-src="https://www.petz.com.br/blog/wp-content/uploads/2024/05/alface_1.jpg" /><noscript><img fetchpriority="high" decoding="async" class="size-full wp-image-2472927 aligncenter" src="https://www.petz.com.br/blog/wp-content/uploads/2024/05/alface_1.jpg" alt="Alface americana cortada." width="900" height="540" title="Como plantar alface americana 1" srcset="https://www.petz.com.br/blog/wp-content/uploads/2024/05/alface_1.jpg 900w, https://www.petz.com.br/blog/wp-content/uploads/2024/05/alface_1-300x180.jpg 300w, https://www.petz.com.br/blog/wp-content/uploads/2024/05/alface_1-768x461.jpg 768w, https://www.petz.com.br/blog/wp-content/uploads/2024/05/alface_1-150x90.jpg 150w" sizes="(max-width: 900px) 100vw, 900px" /></noscript></span><span style="font-weight: 400;"><br />
+</span><span style="font-weight: 400;">Preparando o solo e escolhendo o local ideal para sua alface americana</span></p>
+<p><span style="font-weight: 400;">A alface americana se desenvolve melhor em solos ricos em matéria orgânica, bem drenados e com pH entre 6,0 e 7,0. Para garantir um ambiente ideal, confira do solo antes do plantio e faça as correções necessárias, como adicionar calcário para aumentar o pH ou adubo orgânico para enriquecer o solo. </span><span style="font-weight: 400;"><br />
+</span><span style="font-weight: 400;">O local também é importante: o plantio deve receber no mínimo 6 horas de luz solar direta por dia. Evite áreas sombreadas ou com ventos fortes. Se o clima da sua região for muito quente, o cultivo sob rede de proteção pode ser necessário para proteger as plantas do sol excessivo.</span><span style="font-weight: 400;"><br />
+</span><span style="font-weight: 400;">Além disso, prepare o canteiro com antecedência, revolvendo o solo e incorporando adubo orgânico. Faça sementeira em local protegido ou utilize mudas já crescidas. Mantenha o solo úmido, mas não encharcado, durante todo o ciclo de cultivo. Afaste as mudas entre 20 e 30 cm para garantir espaço para o desenvolvimento das folhas.</span><span style="font-weight: 400;"><br />
+</span><span style="font-weight: 400;"><br />
+</span><span style="font-weight: 400;">Plantio das sementes ou mudas</span></p>
+<p><span style="font-weight: 400;">A alface americana pode ser plantada diretamente no solo ou através de mudas. Cada método possui suas vantagens e desvantagens, e a escolha ideal dependerá de suas preferências e experiência em jardinagem.</span></p>
+<p><span style="font-weight: 400;">Se optar pelo plantio direto no solo</span></p>
+<p><span style="font-weight: 400;">Vantagens: É um método mais econômico, pois não há necessidade de comprar mudas. Permite um espaçamento mais personalizado entre as plantas.</span></p>
+<p><span style="font-weight: 400;">Desvantagens: Requer cuidados mais minuciosos com a germinação e o controle de ervas daninhas. O tempo até a colheita pode ser um pouco maior do que no caso do uso de mudas.</span><span style="font-weight: 400;"><br />
+</span></p>
+<p><img decoding="async" class="size-full wp-image-2472926 aligncenter" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20900%20540'%3E%3C/svg%3E" alt="Alface crespa em cima de superfície de madeira." width="900" height="540" title="Como plantar alface americana 2" data-lazy-srcset="https://www.petz.com.br/blog/wp-content/uploads/2024/05/alface_2.jpg 900w, https://www.petz.com.br/blog/wp-content/uploads/2024/05/alface_2-300x180.jpg 300w, https://www.petz.com.br/blog/wp-content/uploads/2024/05/alface_2-768x461.jpg 768w, https://www.petz.com.br/blog/wp-content/uploads/2024/05/alface_2-150x90.jpg 150w" data-lazy-sizes="(max-width: 900px) 100vw, 900px" data-lazy-src="https://www.petz.com.br/blog/wp-content/uploads/2024/05/alface_2.jpg" /><noscript><img decoding="async" class="size-full wp-image-2472926 aligncenter" src="https://www.petz.com.br/blog/wp-content/uploads/2024/05/alface_2.jpg" alt="Alface crespa em cima de superfície de madeira." width="900" height="540" title="Como plantar alface americana 2" srcset="https://www.petz.com.br/blog/wp-content/uploads/2024/05/alface_2.jpg 900w, https://www.petz.com.br/blog/wp-content/uploads/2024/05/alface_2-300x180.jpg 300w, https://www.petz.com.br/blog/wp-content/uploads/2024/05/alface_2-768x461.jpg 768w, https://www.petz.com.br/blog/wp-content/uploads/2024/05/alface_2-150x90.jpg 150w" sizes="(max-width: 900px) 100vw, 900px" /></noscript></p>
+<p><span style="font-weight: 400;">Se a escolha for o plantio com mudas</span></p>
+<p><span style="font-weight: 400;">Vantagens: Oferece um crescimento mais rápido e uniforme das plantas. Reduz o tempo até a colheita. Facilita o controle de ervas daninhas.</span></p>
+<p><span style="font-weight: 400;">Desvantagens: Tem um custo inicial maior, devido à compra das mudas. Requer um pouco mais de experiência no manejo das mudas.</span></p>
+<p><span style="font-weight: 400;">No caso de plantio direto:</span></p>
+<ul>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Prepare o solo com antecedência, incorporando matéria orgânica e ajustando o pH se necessário. </span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Faça sulcos rasos no solo com espaçamento de 20 a 30 cm entre eles. </span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Semeie as sementes uniformemente nos sulcos e cubra-as com uma fina camada de terra. </span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Mantenha o solo úmido até a germinação. </span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Após a germinação, afine as mudas, deixando as mais fortes com um espaçamento adequado entre elas.</span></li>
+</ul>
+<p><span style="font-weight: 400;">Já no caso do plantio com mudas:</span></p>
+<ul>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Adquira brotos de boa qualidade em viveiros confiáveis. </span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Prepare o solo com antecedência, incorporando matéria orgânica e ajustando o pH se necessário. </span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Faça as covas no solo com espaçamento de 20 a 30 cm entre elas. </span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Retire as mudas de seus recipientes com cuidado, para não danificar as raízes. </span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Coloque cada muda em uma cova e preencha com terra, pressionando levemente ao redor do caule.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Regue abundantemente para firmar as mudas no solo.</span></li>
+</ul>
+<p><span style="font-weight: 400;">Independentemente do método escolhido, siga os cuidados básicos de cultivo, como irrigação regular, controle de ervas daninhas e adubação, para garantir uma colheita farta e saborosa de alface americana!</span><span style="font-weight: 400;">Cuidados coma alface americana</span></p>
+<p><span style="font-weight: 400;">Após o plantio, a alface americana exige alguns cuidados básicos para se desenvolver de forma saudável e proporcionar uma colheita farta e saborosa. O primeiro deles é a rega, que deve ser frequente, mas sem encharcar o solo. O ideal é regar no início da manhã ou no final da tarde, evitando o calor do sol. Vale também utilizar um regador com jato fino para direcionar a água para a base das plantas, evitando molhar as folhas.</span><span style="font-weight: 400;"><br />
+</span><span style="font-weight: 400;">O segundo cuidado é com as ervas daninhas, remova-as regularmente para evitar que compitam com as plantas por nutrientes e água. Mantenha o solo solto ao redor das mudas, utilizando uma ferramenta manual para capinar.</span><span style="font-weight: 400;"><br />
+</span><span style="font-weight: 400;">Em terceiro, utilize um fertilizante orgânico rico em nitrogênio e potássio a cada 15 dias para fornecer os nutrientes necessários para o crescimento das plantas e siga as instruções do fabricante para a dosagem e aplicação correta.</span><span style="font-weight: 400;"><br />
+</span><span style="font-weight: 400;">Por último, mas não menos importante, monitore as plantas regularmente para identificar pragas e doenças. Se necessário, utilize métodos naturais de controle, como insetos benéficos ou soluções caseiras à base de alho ou pimenta.</span></p>
+<p><img decoding="async" class="size-full wp-image-2472925 aligncenter" src="https://www.petz.com.br/blog/wp-content/uploads/2024/05/alface_3.jpg" alt="Alface crespa cortada." width="900" height="540" title="Como plantar alface americana 3" srcset="https://www.petz.com.br/blog/wp-content/uploads/2024/05/alface_3.jpg 900w, https://www.petz.com.br/blog/wp-content/uploads/2024/05/alface_3-300x180.jpg 300w, https://www.petz.com.br/blog/wp-content/uploads/2024/05/alface_3-768x461.jpg 768w, https://www.petz.com.br/blog/wp-content/uploads/2024/05/alface_3-150x90.jpg 150w" sizes="(max-width: 900px) 100vw, 900px" /></p>
+<p><span style="font-weight: 400;">Com esses cuidados básicos, você terá uma colheita farta e saborosa de alface americana! </span><span style="font-weight: 400;"><br />
+</span><span style="font-weight: 400;">Para iniciar sua horta com tudo em dia, visite o setor de casa e jardim da </span><a href="https://www.petz.com.br/casa-e-jardim"><span style="font-weight: 400;">Petz</span></a><span style="font-weight: 400;"> e encontre tudo o que precisa!</span></p>
+<p>&nbsp;</p>
+			</div>
+
+			<div class="perfil">
+				<div class="info">
+					<div class="info-img">
+						<svg width="55" height="56" viewBox="0 0 55 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect y="0.450684" width="55" height="55" rx="27.5" fill="#F9E6B3"/>
+							<path d="M33.3433 17.5873C27.9709 17.375 21.0801 17.6051 16.3982 17.5873C16.1929 17.5873 15.919 17.7614 15.7737 17.9067C15.6285 18.0519 15.5311 18.4792 15.5311 18.6846V22.6581C15.5311 23.7108 17.2422 23.2148 17.5509 26.3355C17.6285 27.127 17.6285 27.9242 17.5509 28.7157C17.2422 31.8506 15.5293 31.4384 15.5293 32.4483V36.8501C15.5298 37.0551 15.6116 37.2516 15.7567 37.3965C15.9019 37.5413 16.0986 37.6227 16.3037 37.6227H30.5277C31.2985 37.6227 31.3985 36.7038 31.3985 35.6421C31.3985 34.8267 31.6233 33.5171 30.6187 33.3922C29.3448 33.237 28.4223 32.6785 27.3303 31.6829C27.0074 31.3885 26.7951 31.3082 27.3928 30.5874C27.9905 29.8665 27.9745 30.1984 28.3581 30.4464C29.4982 31.3385 30.8899 31.4884 31.9266 31.5259C36.8029 31.5865 40.6908 29.6542 40.764 24.9152C40.805 21.8641 38.746 17.6248 33.3433 17.5873ZM29.4929 25.6021C29.4929 25.8823 29.2127 26.1107 28.8684 26.1107H28.1458C27.8014 26.1107 27.523 25.8823 27.523 25.6021V21.9623C27.523 21.6804 27.8014 21.4538 28.1458 21.4538H28.8684C29.2127 21.4538 29.4929 21.6804 29.4929 21.9623V25.6021Z" fill="#175EA8"/>
+							<path d="M35.4953 37.6225C36.5999 37.6225 37.4954 36.727 37.4954 35.6223C37.4954 34.5177 36.5999 33.6222 35.4953 33.6222C34.3906 33.6222 33.4951 34.5177 33.4951 35.6223C33.4951 36.727 34.3906 37.6225 35.4953 37.6225Z" fill="#175EA8"/>
+						</svg>
+						<div>
+							<h3>Petz</h3>
+							<p>Aqui você encontra tudo sobre o mundo animal e fica por dentro dos cuidados essenciais com o seu pet.</p>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="btns">
+					<button js-copy-link>
+						<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M15.5 5.90068C15.4913 5.82413 15.4746 5.74871 15.45 5.67568V5.60068C15.4099 5.515 15.3565 5.43624 15.2917 5.36735V5.36735L10.2917 0.36735C10.2228 0.30253 10.144 0.249084 10.0583 0.209016C10.0335 0.205483 10.0082 0.205483 9.98333 0.209016C9.89868 0.160467 9.80519 0.129303 9.70833 0.11735H6.33333C5.67029 0.11735 5.03441 0.380742 4.56557 0.849583C4.09673 1.31842 3.83333 1.95431 3.83333 2.61735V3.45068H3C2.33696 3.45068 1.70107 3.71408 1.23223 4.18292C0.763392 4.65176 0.5 5.28764 0.5 5.95068V14.284C0.5 14.9471 0.763392 15.5829 1.23223 16.0518C1.70107 16.5206 2.33696 16.784 3 16.784H9.66667C10.3297 16.784 10.9656 16.5206 11.4344 16.0518C11.9033 15.5829 12.1667 14.9471 12.1667 14.284V13.4507H13C13.663 13.4507 14.2989 13.1873 14.7678 12.7185C15.2366 12.2496 15.5 11.6137 15.5 10.9507V5.95068C15.5 5.95068 15.5 5.95068 15.5 5.90068ZM10.5 2.95902L12.6583 5.11735H11.3333C11.1123 5.11735 10.9004 5.02955 10.7441 4.87327C10.5878 4.71699 10.5 4.50503 10.5 4.28402V2.95902ZM10.5 14.284C10.5 14.505 10.4122 14.717 10.2559 14.8733C10.0996 15.0296 9.88768 15.1174 9.66667 15.1174H3C2.77899 15.1174 2.56702 15.0296 2.41074 14.8733C2.25446 14.717 2.16667 14.505 2.16667 14.284V5.95068C2.16667 5.72967 2.25446 5.51771 2.41074 5.36143C2.56702 5.20515 2.77899 5.11735 3 5.11735H3.83333V10.9507C3.83333 11.6137 4.09673 12.2496 4.56557 12.7185C5.03441 13.1873 5.67029 13.4507 6.33333 13.4507H10.5V14.284ZM13.8333 10.9507C13.8333 11.1717 13.7455 11.3837 13.5893 11.5399C13.433 11.6962 13.221 11.784 13 11.784H6.33333C6.11232 11.784 5.90036 11.6962 5.74408 11.5399C5.5878 11.3837 5.5 11.1717 5.5 10.9507V2.61735C5.5 2.39634 5.5878 2.18437 5.74408 2.02809C5.90036 1.87181 6.11232 1.78402 6.33333 1.78402H8.83333V4.28402C8.83333 4.94706 9.09672 5.58294 9.56557 6.05178C10.0344 6.52062 10.6703 6.78402 11.3333 6.78402H13.8333V10.9507Z" fill="#454545"/>
+						</svg>
+						Copiar link
+					</button>
+					<a href="" onclick="window.open('https://twitter.com/intent/tweet?text='+encodeURIComponent('Como plantar alface americana')+'&url='+encodeURIComponent('https://www.petz.com.br/blog/plantas/como-plantar-alface-americana/'),'twitter-dialog','width=626,height=436'); return false;">
+						<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M18.3332 5.28402C17.7068 5.55576 17.0444 5.7354 16.3665 5.81735C17.0816 5.39012 17.6176 4.718 17.8748 3.92568C17.2028 4.32574 16.4671 4.6076 15.6998 4.75902C15.187 4.20283 14.504 3.8326 13.758 3.70639C13.012 3.58019 12.2453 3.70515 11.578 4.06167C10.9107 4.4182 10.3806 4.98613 10.0709 5.67638C9.76113 6.36663 9.68925 7.14017 9.8665 7.87568C8.50769 7.80695 7.17854 7.45314 5.96538 6.83723C4.75223 6.22132 3.68221 5.35709 2.82484 4.30068C2.52412 4.82582 2.3661 5.42053 2.3665 6.02568C2.36544 6.58767 2.50335 7.1412 2.76797 7.63699C3.03258 8.13278 3.41569 8.55544 3.88317 8.86735C3.33982 8.85257 2.80808 8.70676 2.33317 8.44235V8.48402C2.33724 9.27143 2.61317 10.0333 3.11427 10.6407C3.61537 11.248 4.31088 11.6637 5.08317 11.8173C4.78588 11.9078 4.47723 11.9555 4.1665 11.959C3.95141 11.9565 3.73686 11.937 3.52484 11.9007C3.74476 12.578 4.17036 13.17 4.7424 13.5941C5.31444 14.0183 6.00448 14.2536 6.7165 14.2673C5.51417 15.2134 4.02974 15.7297 2.49984 15.734C2.22128 15.7349 1.94295 15.7182 1.6665 15.684C3.22853 16.6926 5.04885 17.228 6.90817 17.2257C8.19125 17.239 9.46412 16.9965 10.6524 16.5124C11.8408 16.0283 12.9207 15.3123 13.8292 14.4061C14.7377 13.4999 15.4565 12.4218 15.9436 11.2348C16.4308 10.0477 16.6765 8.77546 16.6665 7.49235C16.6665 7.35068 16.6665 7.20068 16.6665 7.05068C17.3204 6.56302 17.8844 5.9652 18.3332 5.28402V5.28402Z" fill="#454545"/>
+						</svg>
+					</a>
+					<a href="" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('https://www.petz.com.br/blog/plantas/como-plantar-alface-americana/'),'facebook-dialog','width=626,height=436'); return false;">
+						<svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M7.59997 2.88402H9.16663V0.234016C8.40809 0.155139 7.64593 0.116196 6.8833 0.11735C4.61663 0.11735 3.06663 1.50068 3.06663 4.03402V6.21735H0.508301V9.18402H3.06663V16.784H6.1333V9.18402H8.6833L9.06663 6.21735H6.1333V4.32568C6.1333 3.45068 6.36663 2.88402 7.59997 2.88402Z" fill="#454545"/>
+						</svg>
+					</a>
+					<a href="#" js-btn-linkedin>
+						<svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M16.0585 0.11735H1.9418C1.78311 0.115146 1.62555 0.144223 1.4781 0.20292C1.33066 0.261617 1.19622 0.348784 1.08246 0.459443C0.968707 0.570103 0.877865 0.702087 0.815123 0.847858C0.752382 0.993629 0.718971 1.15033 0.716797 1.30902V15.5923C0.718971 15.751 0.752382 15.9077 0.815123 16.0535C0.877865 16.1993 0.968707 16.3313 1.08246 16.4419C1.19622 16.5526 1.33066 16.6397 1.4781 16.6984C1.62555 16.7571 1.78311 16.7862 1.9418 16.784H16.0585C16.2171 16.7862 16.3747 16.7571 16.5222 16.6984C16.6696 16.6397 16.804 16.5526 16.9178 16.4419C17.0316 16.3313 17.1224 16.1993 17.1851 16.0535C17.2479 15.9077 17.2813 15.751 17.2835 15.5923V1.30902C17.2813 1.15033 17.2479 0.993629 17.1851 0.847858C17.1224 0.702087 17.0316 0.570103 16.9178 0.459443C16.804 0.348784 16.6696 0.261617 16.5222 0.20292C16.3747 0.144223 16.2171 0.115146 16.0585 0.11735V0.11735ZM5.7418 14.0673H3.2418V6.56735H5.7418V14.0673ZM4.4918 5.51735C4.14702 5.51735 3.81636 5.38039 3.57256 5.13659C3.32876 4.89279 3.1918 4.56213 3.1918 4.21735C3.1918 3.87257 3.32876 3.54191 3.57256 3.29811C3.81636 3.05431 4.14702 2.91735 4.4918 2.91735C4.67488 2.89659 4.86028 2.91473 5.03586 2.97059C5.21144 3.02644 5.37325 3.11876 5.51068 3.24148C5.64811 3.36421 5.75807 3.51458 5.83336 3.68275C5.90864 3.85092 5.94756 4.0331 5.94756 4.21735C5.94756 4.4016 5.90864 4.58378 5.83336 4.75195C5.75807 4.92012 5.64811 5.07049 5.51068 5.19322C5.37325 5.31594 5.21144 5.40826 5.03586 5.46411C4.86028 5.51997 4.67488 5.53811 4.4918 5.51735V5.51735ZM14.7585 14.0673H12.2585V10.0424C12.2585 9.03402 11.9001 8.37568 10.9918 8.37568C10.7107 8.37774 10.437 8.46592 10.2075 8.62833C9.97803 8.79074 9.80387 9.01958 9.70846 9.28402C9.64325 9.47988 9.61499 9.68616 9.62513 9.89235V14.059H7.12513C7.12513 14.059 7.12513 7.24235 7.12513 6.55902H9.62513V7.61735C9.85224 7.22327 10.1826 6.89862 10.5805 6.67835C10.9784 6.45809 11.4289 6.35056 11.8835 6.36735C13.5501 6.36735 14.7585 7.44235 14.7585 9.75068V14.0673Z" fill="#454545"/>
+						</svg>
+					</a>
+				</div>
+
+			</div>
+
+
+			<div class="comentarios">
+				
+
+	<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Deixe um comentário <small><a rel="nofollow" id="cancel-comment-reply-link" href="/blog/plantas/como-plantar-alface-americana/#respond" style="display:none;">Cancelar resposta</a></small></h3><form action="https://www.petz.com.br/blog/comments/" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">O seu endereço de e-mail não será publicado.</span> <span class="required-field-message">Campos obrigatórios são marcados com <span class="required">*</span></span></p><p class="comment-form-comment"><textarea id="comment" required name="comment" placeholder="Comentário" cols="45" rows="8" aria-required="true"></textarea></p><div class="grid-form-2"><p class="comment-form-author"><input id="author" name="author" required placeholder="Nome" type="text" value="" size="30" aria-required='true' /></p>
+<p class="comment-form-email"><input id="email" name="email" required placeholder="E-mail*" type="email" value="" size="30" aria-required='true' /></p></div>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" /> <label for="wp-comment-cookies-consent">Salvar meus dados neste navegador para a próxima vez que eu comentar.</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Comentar" /> <input type='hidden' name='comment_post_ID' value='2472924' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p></form>	</div>
+	
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<div class="container">
+		<div class="box-center">
+			<div class="cta">
+				<div  class="advads-b7aebc3047633d1e28cca22e3633af8c advads-super-banner-home" id="advads-b7aebc3047633d1e28cca22e3633af8c"></div>			</div>
+		</div>
+	</div>
+
+
+
+	<section class="s-categorias-padrao">
+		<div class="container">
+
+			<h2 class="titulo">
+				<svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.1701 0.559999C19.4533 0.436533 18.7274 0.37298 18.0001 0.369999C15.5184 0.367965 13.0886 1.07957 11.0001 2.42C8.90623 1.09717 6.47674 0.40303 4.00008 0.419999C3.27273 0.42298 2.54689 0.486533 1.83008 0.609999C1.59529 0.650478 1.38267 0.773458 1.2305 0.956792C1.07833 1.14013 0.996621 1.37177 1.00008 1.61V13.61C0.997943 13.7569 1.02821 13.9025 1.08873 14.0364C1.14926 14.1703 1.23855 14.2893 1.35026 14.3847C1.46197 14.4802 1.59334 14.5499 1.73504 14.5888C1.87674 14.6278 2.02528 14.635 2.17008 14.61C3.6031 14.3619 5.07129 14.4031 6.48815 14.7311C7.90501 15.0591 9.24191 15.6674 10.4201 16.52L10.5401 16.59H10.6501C10.761 16.6362 10.8799 16.66 11.0001 16.66C11.1202 16.66 11.2392 16.6362 11.3501 16.59H11.4601L11.5801 16.52C12.75 15.6483 14.0831 15.0203 15.5002 14.6734C16.9174 14.3264 18.3897 14.2674 19.8301 14.5C19.9749 14.525 20.1234 14.5178 20.2651 14.4788C20.4068 14.4399 20.5382 14.3702 20.6499 14.2747C20.7616 14.1793 20.8509 14.0603 20.9114 13.9264C20.972 13.7925 21.0022 13.6469 21.0001 13.5V1.5C20.9897 1.27215 20.9017 1.05471 20.7507 0.883737C20.5998 0.712764 20.3949 0.598536 20.1701 0.559999ZM10.0001 13.85C8.14997 12.8767 6.0906 12.3687 4.00008 12.37C3.67008 12.37 3.34008 12.37 3.00008 12.37V2.37C3.33314 2.3508 3.66703 2.3508 4.00008 2.37C6.13347 2.36764 8.2203 2.99369 10.0001 4.17V13.85ZM19.0001 12.41C18.6601 12.41 18.3301 12.41 18.0001 12.41C15.9096 12.4087 13.8502 12.9167 12.0001 13.89V4.17C13.7799 2.99369 15.8667 2.36764 18.0001 2.37C18.3331 2.3508 18.667 2.3508 19.0001 2.37V12.41ZM20.1701 16.56C19.4533 16.4365 18.7274 16.373 18.0001 16.37C15.5184 16.368 13.0886 17.0796 11.0001 18.42C8.9116 17.0796 6.48172 16.368 4.00008 16.37C3.27273 16.373 2.54689 16.4365 1.83008 16.56C1.69991 16.5807 1.57511 16.6268 1.46285 16.6959C1.35059 16.765 1.25309 16.8555 1.17595 16.9624C1.09882 17.0693 1.04357 17.1903 1.01339 17.3186C0.983207 17.4469 0.978686 17.5799 1.00008 17.71C1.0509 17.9697 1.20257 18.1986 1.42188 18.3467C1.64118 18.4948 1.91022 18.5499 2.17008 18.5C3.6031 18.2519 5.07129 18.2931 6.48815 18.6211C7.90501 18.9491 9.24191 19.5574 10.4201 20.41C10.5894 20.5306 10.7922 20.5954 11.0001 20.5954C11.208 20.5954 11.4107 20.5306 11.5801 20.41C12.7583 19.5574 14.0952 18.9491 15.512 18.6211C16.9289 18.2931 18.3971 18.2519 19.8301 18.5C20.0899 18.5499 20.359 18.4948 20.5783 18.3467C20.7976 18.1986 20.9493 17.9697 21.0001 17.71C21.0215 17.5799 21.017 17.4469 20.9868 17.3186C20.9566 17.1903 20.9014 17.0693 20.8242 16.9624C20.7471 16.8555 20.6496 16.765 20.5373 16.6959C20.4251 16.6268 20.3003 16.5807 20.1701 16.56Z" fill="#1D1D1D"/>
+</svg>
+				Mais no blog
+			</h2>
+
+		</div>
+
+		<div class="swiper swiper-categorias-padrao visible-desktop">
+			<div class="swiper-wrapper">
+
+				
+					<div class="swiper-slide">
+						<div class="post-categoria-padrao">
+							<a href="https://www.petz.com.br/blog/pets/gatos/por-que-gato-joga-areia-fora-da-caixa/">
+								<div data-bg="https://www.petz.com.br/blog/wp-content/uploads/2024/08/por-que-gato-joga-areia-fora-da-caixa-interna2.jpg" class="img rocket-lazyload" style=""></div>
+							</a>
+							<div class="info">
+								<div class="tags-post">
+																			<a href="https://www.petz.com.br/blog/comportamento/">
+											<div class="tag comportamento" >
+												Comportamento											</div>
+										</a>
+																			<a href="https://www.petz.com.br/blog/curiosidades/">
+											<div class="tag curiosidades" >
+												Curiosidades											</div>
+										</a>
+																	</div>
+								<a href="https://www.petz.com.br/blog/pets/gatos/por-que-gato-joga-areia-fora-da-caixa/">
+									<h3>Descubra por que gato joga areia fora da caixa!</h3>
+								</a>
+								<a href="https://www.petz.com.br/blog/pets/gatos/por-que-gato-joga-areia-fora-da-caixa/">
+									<p>Você varre, varre, varre e parece que a sujeira não tem fim? Calma, muitos tutores [&hellip;]</p>
+								</a>
+								<a href="https://www.petz.com.br/blog/pets/gatos/por-que-gato-joga-areia-fora-da-caixa/">
+									<div class="meta-post">
+										<span>28 de agosto de 2024</span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				
+					<div class="swiper-slide">
+						<div class="post-categoria-padrao">
+							<a href="https://www.petz.com.br/blog/pets/gatos/toxoplasmose/">
+								<div data-bg="https://www.petz.com.br/blog/wp-content/uploads/2023/10/insuficiencia-renal-em-gatos-topo.jpg" class="img rocket-lazyload" style=""></div>
+							</a>
+							<div class="info">
+								<div class="tags-post">
+																			<a href="https://www.petz.com.br/blog/pets/gatos/">
+											<div class="tag gatos" style='background: #d19f72; border-color: #d19f72; color: #fff;'>
+												Gatos											</div>
+										</a>
+																			<a href="https://www.petz.com.br/blog/saude-e-cuidados/">
+											<div class="tag saude-e-cuidados" >
+												Saúde e Cuidados											</div>
+										</a>
+																	</div>
+								<a href="https://www.petz.com.br/blog/pets/gatos/toxoplasmose/">
+									<h3>Mitos e verdades sobre toxoplasmose, a doença do gato</h3>
+								</a>
+								<a href="https://www.petz.com.br/blog/pets/gatos/toxoplasmose/">
+									<p>A toxoplasmose é um problema de saúde que gera grande preocupação, principalmente entre as pessoas [&hellip;]</p>
+								</a>
+								<a href="https://www.petz.com.br/blog/pets/gatos/toxoplasmose/">
+									<div class="meta-post">
+										<span>27 de agosto de 2024</span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				
+					<div class="swiper-slide">
+						<div class="post-categoria-padrao">
+							<a href="https://www.petz.com.br/blog/cachorros/frutas-que-cachorro-nao-pode-comer/">
+								<div data-bg="https://www.petz.com.br/blog/wp-content/uploads/2020/01/frutas-que-cachorro-nao-pode-comer-interna2.jpg" class="img rocket-lazyload" style=""></div>
+							</a>
+							<div class="info">
+								<div class="tags-post">
+																			<a href="https://www.petz.com.br/blog/cachorros/alimentacao/">
+											<div class="tag alimentacao" >
+												Alimentação											</div>
+										</a>
+																			<a href="https://www.petz.com.br/blog/cachorros/">
+											<div class="tag cachorros" >
+												Cachorros											</div>
+										</a>
+																	</div>
+								<a href="https://www.petz.com.br/blog/cachorros/frutas-que-cachorro-nao-pode-comer/">
+									<h3>Confira a lista de frutas que cachorro não pode comer</h3>
+								</a>
+								<a href="https://www.petz.com.br/blog/cachorros/frutas-que-cachorro-nao-pode-comer/">
+									<p>Não há como negar que os pets adoram pedir e, é claro, ganhar um petisco [&hellip;]</p>
+								</a>
+								<a href="https://www.petz.com.br/blog/cachorros/frutas-que-cachorro-nao-pode-comer/">
+									<div class="meta-post">
+										<span>26 de agosto de 2024</span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				
+					<div class="swiper-slide">
+						<div class="post-categoria-padrao">
+							<a href="https://www.petz.com.br/blog/curiosidades/porque-gato-nao-toma-choque-em-cerca-eletrica/">
+								<div data-bg="https://www.petz.com.br/blog/wp-content/uploads/2024/08/por-que-gato-nao-gosta-de-porta-fechada-interna.jpg" class="img rocket-lazyload" style=""></div>
+							</a>
+							<div class="info">
+								<div class="tags-post">
+																			<a href="https://www.petz.com.br/blog/curiosidades/">
+											<div class="tag curiosidades" >
+												Curiosidades											</div>
+										</a>
+																	</div>
+								<a href="https://www.petz.com.br/blog/curiosidades/porque-gato-nao-toma-choque-em-cerca-eletrica/">
+									<h3>Por que gato não toma choque em cerca elétrica?</h3>
+								</a>
+								<a href="https://www.petz.com.br/blog/curiosidades/porque-gato-nao-toma-choque-em-cerca-eletrica/">
+									<p>Você já deve ter observado os bichanos andando nos muros com grades numa boa. Então, [&hellip;]</p>
+								</a>
+								<a href="https://www.petz.com.br/blog/curiosidades/porque-gato-nao-toma-choque-em-cerca-eletrica/">
+									<div class="meta-post">
+										<span>25 de agosto de 2024</span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				
+					<div class="swiper-slide">
+						<div class="post-categoria-padrao">
+							<a href="https://www.petz.com.br/blog/especies/roedores/porquinho-da-india-pode-comer-pessego/">
+								<div data-bg="https://www.petz.com.br/blog/wp-content/uploads/2024/08/porquinho-da-india-pode-comer-pessego-interna2.jpg" class="img rocket-lazyload" style=""></div>
+							</a>
+							<div class="info">
+								<div class="tags-post">
+																			<a href="https://www.petz.com.br/blog/especies/roedores/">
+											<div class="tag roedores" style='background: #71b790; border-color: #71b790; color: #fff;'>
+												Roedores											</div>
+										</a>
+																	</div>
+								<a href="https://www.petz.com.br/blog/especies/roedores/porquinho-da-india-pode-comer-pessego/">
+									<h3>Aprenda se porquinho-da-índia pode comer pêssego!</h3>
+								</a>
+								<a href="https://www.petz.com.br/blog/especies/roedores/porquinho-da-india-pode-comer-pessego/">
+									<p>Oferecer alimentos de humanos para os animais têm sido muito comum atualmente. Então, aprenda se [&hellip;]</p>
+								</a>
+								<a href="https://www.petz.com.br/blog/especies/roedores/porquinho-da-india-pode-comer-pessego/">
+									<div class="meta-post">
+										<span>24 de agosto de 2024</span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				
+					<div class="swiper-slide">
+						<div class="post-categoria-padrao">
+							<a href="https://www.petz.com.br/blog/noticias/parceiro-petz-como-impulsionar-as-vendas/">
+								<div data-bg="https://www.petz.com.br/blog/wp-content/uploads/2024/08/parceiro_petz_2-1.jpg" class="img rocket-lazyload" style=""></div>
+							</a>
+							<div class="info">
+								<div class="tags-post">
+																			<a href="https://www.petz.com.br/blog/noticias/">
+											<div class="tag noticias" >
+												Notícias											</div>
+										</a>
+																	</div>
+								<a href="https://www.petz.com.br/blog/noticias/parceiro-petz-como-impulsionar-as-vendas/">
+									<h3>Parceiro Petz: como impulsionar as vendas criando uma comunidade</h3>
+								</a>
+								<a href="https://www.petz.com.br/blog/noticias/parceiro-petz-como-impulsionar-as-vendas/">
+									<p>Em um mercado cada vez mais competitivo, encontrar maneiras eficazes de impulsionar as vendas é [&hellip;]</p>
+								</a>
+								<a href="https://www.petz.com.br/blog/noticias/parceiro-petz-como-impulsionar-as-vendas/">
+									<div class="meta-post">
+										<span>23 de agosto de 2024</span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				
+					<div class="swiper-slide">
+						<div class="post-categoria-padrao">
+							<a href="https://www.petz.com.br/blog/pets/aquarismo/peixe-betta-pode-comer-alface/">
+								<div data-bg="https://www.petz.com.br/blog/wp-content/uploads/2024/08/peixe_betta_alface_3.jpg" class="img rocket-lazyload" style=""></div>
+							</a>
+							<div class="info">
+								<div class="tags-post">
+																			<a href="https://www.petz.com.br/blog/pets/aquarismo/">
+											<div class="tag aquarismo" style='background: #0141a7; border-color: #0141a7; color: #fff;'>
+												Aquarismo											</div>
+										</a>
+																			<a href="https://www.petz.com.br/blog/especies/peixes/">
+											<div class="tag peixes" style='background: #8e7fae; border-color: #8e7fae; color: #fff;'>
+												Peixe											</div>
+										</a>
+																	</div>
+								<a href="https://www.petz.com.br/blog/pets/aquarismo/peixe-betta-pode-comer-alface/">
+									<h3>Peixe betta pode comer alface</h3>
+								</a>
+								<a href="https://www.petz.com.br/blog/pets/aquarismo/peixe-betta-pode-comer-alface/">
+									<p>Quando pensamos em alimentos saudáveis, com certeza a alface está na lista, não é mesmo? [&hellip;]</p>
+								</a>
+								<a href="https://www.petz.com.br/blog/pets/aquarismo/peixe-betta-pode-comer-alface/">
+									<div class="meta-post">
+										<span>23 de agosto de 2024</span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				
+					<div class="swiper-slide">
+						<div class="post-categoria-padrao">
+							<a href="https://www.petz.com.br/blog/especies/animais-com-melhor-olfato/">
+								<div data-bg="https://www.petz.com.br/blog/wp-content/uploads/2024/08/elefante_africano.jpg" class="img rocket-lazyload" style=""></div>
+							</a>
+							<div class="info">
+								<div class="tags-post">
+																			<a href="https://www.petz.com.br/blog/especies/">
+											<div class="tag especies" style='background: ; border-color: ; color: #fff;'>
+												Espécies											</div>
+										</a>
+																	</div>
+								<a href="https://www.petz.com.br/blog/especies/animais-com-melhor-olfato/">
+									<h3>Animais com melhor olfato</h3>
+								</a>
+								<a href="https://www.petz.com.br/blog/especies/animais-com-melhor-olfato/">
+									<p>O mundo animal é repleto de habilidades incríveis, e o olfato é um dos sentidos [&hellip;]</p>
+								</a>
+								<a href="https://www.petz.com.br/blog/especies/animais-com-melhor-olfato/">
+									<div class="meta-post">
+										<span>23 de agosto de 2024</span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				
+					<div class="swiper-slide">
+						<div class="post-categoria-padrao">
+							<a href="https://www.petz.com.br/blog/pets/animais-de-assistencia-emocional/">
+								<div data-bg="https://www.petz.com.br/blog/wp-content/uploads/2024/08/gato_animal_assistencia_1.jpg" class="img rocket-lazyload" style=""></div>
+							</a>
+							<div class="info">
+								<div class="tags-post">
+																			<a href="https://www.petz.com.br/blog/curiosidades/">
+											<div class="tag curiosidades" >
+												Curiosidades											</div>
+										</a>
+																			<a href="https://www.petz.com.br/blog/pets/">
+											<div class="tag pets" style='background: #71b790; border-color: #71b790; color: #fff;'>
+												Pets											</div>
+										</a>
+																	</div>
+								<a href="https://www.petz.com.br/blog/pets/animais-de-assistencia-emocional/">
+									<h3>Animais de assistência emocional</h3>
+								</a>
+								<a href="https://www.petz.com.br/blog/pets/animais-de-assistencia-emocional/">
+									<p>Em um mundo cada vez mais agitado e repleto de desafios, a companhia de um [&hellip;]</p>
+								</a>
+								<a href="https://www.petz.com.br/blog/pets/animais-de-assistencia-emocional/">
+									<div class="meta-post">
+										<span>23 de agosto de 2024</span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				
+					<div class="swiper-slide">
+						<div class="post-categoria-padrao">
+							<a href="https://www.petz.com.br/blog/bem-estar/gatos-bem-estar/fluidoterapia-em-gatos/">
+								<div data-bg="https://www.petz.com.br/blog/wp-content/uploads/2024/08/fluidoterapia_3.jpg" class="img rocket-lazyload" style=""></div>
+							</a>
+							<div class="info">
+								<div class="tags-post">
+																			<a href="https://www.petz.com.br/blog/bem-estar/gatos-bem-estar/">
+											<div class="tag gatos-bem-estar" style='background: ; border-color: ; color: #fff;'>
+												Gatos Bem Estar											</div>
+										</a>
+																	</div>
+								<a href="https://www.petz.com.br/blog/bem-estar/gatos-bem-estar/fluidoterapia-em-gatos/">
+									<h3>Fluidoterapia em gatos</h3>
+								</a>
+								<a href="https://www.petz.com.br/blog/bem-estar/gatos-bem-estar/fluidoterapia-em-gatos/">
+									<p>A saúde dos nossos pets é uma prioridade absoluta para todos os tutores. Entre os [&hellip;]</p>
+								</a>
+								<a href="https://www.petz.com.br/blog/bem-estar/gatos-bem-estar/fluidoterapia-em-gatos/">
+									<div class="meta-post">
+										<span>23 de agosto de 2024</span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				
+					<div class="swiper-slide">
+						<div class="post-categoria-padrao">
+							<a href="https://www.petz.com.br/blog/curiosidades/fotografia-pet/">
+								<div data-bg="https://www.petz.com.br/blog/wp-content/uploads/2024/08/foto_pet_3.jpg" class="img rocket-lazyload" style=""></div>
+							</a>
+							<div class="info">
+								<div class="tags-post">
+																			<a href="https://www.petz.com.br/blog/curiosidades/">
+											<div class="tag curiosidades" >
+												Curiosidades											</div>
+										</a>
+																	</div>
+								<a href="https://www.petz.com.br/blog/curiosidades/fotografia-pet/">
+									<h3>Fotografia pet</h3>
+								</a>
+								<a href="https://www.petz.com.br/blog/curiosidades/fotografia-pet/">
+									<p>Quem já tentou tirar uma foto do seu pet sabe que eles podem ser imprevisíveis, [&hellip;]</p>
+								</a>
+								<a href="https://www.petz.com.br/blog/curiosidades/fotografia-pet/">
+									<div class="meta-post">
+										<span>23 de agosto de 2024</span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				
+					<div class="swiper-slide">
+						<div class="post-categoria-padrao">
+							<a href="https://www.petz.com.br/blog/bem-estar/gatos-bem-estar/gato-pode-comer-vagem/">
+								<div data-bg="https://www.petz.com.br/blog/wp-content/uploads/2024/08/gato_vagem_3.jpg" class="img rocket-lazyload" style=""></div>
+							</a>
+							<div class="info">
+								<div class="tags-post">
+																			<a href="https://www.petz.com.br/blog/bem-estar/gatos-bem-estar/">
+											<div class="tag gatos-bem-estar" style='background: ; border-color: ; color: #fff;'>
+												Gatos Bem Estar											</div>
+										</a>
+																	</div>
+								<a href="https://www.petz.com.br/blog/bem-estar/gatos-bem-estar/gato-pode-comer-vagem/">
+									<h3>Gato pode comer vagem</h3>
+								</a>
+								<a href="https://www.petz.com.br/blog/bem-estar/gatos-bem-estar/gato-pode-comer-vagem/">
+									<p>Você já se perguntou se gato pode comer vagem? Muitos tutores de felinos têm essa [&hellip;]</p>
+								</a>
+								<a href="https://www.petz.com.br/blog/bem-estar/gatos-bem-estar/gato-pode-comer-vagem/">
+									<div class="meta-post">
+										<span>23 de agosto de 2024</span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				
+					<div class="swiper-slide">
+						<div class="post-categoria-padrao">
+							<a href="https://www.petz.com.br/blog/cachorros/nome-de-cachorro-com-a-letra-b/">
+								<div data-bg="https://www.petz.com.br/blog/wp-content/uploads/2022/11/por-que-cachorro-lambe-machucado-topo.jpg" class="img rocket-lazyload" style=""></div>
+							</a>
+							<div class="info">
+								<div class="tags-post">
+																			<a href="https://www.petz.com.br/blog/cachorros/">
+											<div class="tag cachorros" >
+												Cachorros											</div>
+										</a>
+																	</div>
+								<a href="https://www.petz.com.br/blog/cachorros/nome-de-cachorro-com-a-letra-b/">
+									<h3>Existe muito nome de cachorro com a letra B. Confira algumas opções!</h3>
+								</a>
+								<a href="https://www.petz.com.br/blog/cachorros/nome-de-cachorro-com-a-letra-b/">
+									<p>Escolher um apelido para o novo membro da família não é uma tarefa fácil. Se [&hellip;]</p>
+								</a>
+								<a href="https://www.petz.com.br/blog/cachorros/nome-de-cachorro-com-a-letra-b/">
+									<div class="meta-post">
+										<span>23 de agosto de 2024</span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				
+					<div class="swiper-slide">
+						<div class="post-categoria-padrao">
+							<a href="https://www.petz.com.br/blog/curiosidades/animais-que-migram/">
+								<div data-bg="https://www.petz.com.br/blog/wp-content/uploads/2024/08/cegonha.jpg" class="img rocket-lazyload" style=""></div>
+							</a>
+							<div class="info">
+								<div class="tags-post">
+																			<a href="https://www.petz.com.br/blog/curiosidades/">
+											<div class="tag curiosidades" >
+												Curiosidades											</div>
+										</a>
+																	</div>
+								<a href="https://www.petz.com.br/blog/curiosidades/animais-que-migram/">
+									<h3>Animais que migram</h3>
+								</a>
+								<a href="https://www.petz.com.br/blog/curiosidades/animais-que-migram/">
+									<p>A migração é, sem dúvida, um dos fenômenos mais espetaculares. Tais movimentos são geralmente motivados [&hellip;]</p>
+								</a>
+								<a href="https://www.petz.com.br/blog/curiosidades/animais-que-migram/">
+									<div class="meta-post">
+										<span>22 de agosto de 2024</span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				
+					<div class="swiper-slide">
+						<div class="post-categoria-padrao">
+							<a href="https://www.petz.com.br/blog/banho-e-tosa/banho-e-tosa-para-cachorro/">
+								<div data-bg="https://www.petz.com.br/blog/wp-content/uploads/2024/08/banho_e_tosa_petz.jpg" class="img rocket-lazyload" style=""></div>
+							</a>
+							<div class="info">
+								<div class="tags-post">
+																			<a href="https://www.petz.com.br/blog/banho-e-tosa/">
+											<div class="tag banho-e-tosa" >
+												Banho e Tosa											</div>
+										</a>
+																			<a href="https://www.petz.com.br/blog/banho-e-tosa/caes-banho-e-tosa/">
+											<div class="tag caes-banho-e-tosa" style='background: ; border-color: ; color: #fff;'>
+												Cães Banho e Tosa											</div>
+										</a>
+																	</div>
+								<a href="https://www.petz.com.br/blog/banho-e-tosa/banho-e-tosa-para-cachorro/">
+									<h3>Banho e tosa para cachorro</h3>
+								</a>
+								<a href="https://www.petz.com.br/blog/banho-e-tosa/banho-e-tosa-para-cachorro/">
+									<p>Manter a higiene dos nossos pets é tão importante para a saúde deles quanto para [&hellip;]</p>
+								</a>
+								<a href="https://www.petz.com.br/blog/banho-e-tosa/banho-e-tosa-para-cachorro/">
+									<div class="meta-post">
+										<span>22 de agosto de 2024</span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				
+				<div class="swiper-slide">
+					<div  class="advads-58f4b55f42e466d7ce23410bd6f962a7 advads-arroba-banner" id="advads-58f4b55f42e466d7ce23410bd6f962a7"></div>				</div>
+
+			</div>
+		</div>
+
+		<div class="container">
+
+			<div class="posts-mobile visible-mobile">
+									<div class="post-padrao">
+						<a href="https://www.petz.com.br/blog/pets/gatos/por-que-gato-joga-areia-fora-da-caixa/">
+							<img width="900" height="540" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20900%20540'%3E%3C/svg%3E" alt="" data-lazy-src="https://www.petz.com.br/blog/wp-content/uploads/2024/08/banho_e_tosa_petz.jpg"><noscript><img width="900" height="540" src="https://www.petz.com.br/blog/wp-content/uploads/2024/08/banho_e_tosa_petz.jpg" alt=""></noscript>
+						</a>
+						<div class="info">
+							<div class="tags-post">
+																	<a href="https://www.petz.com.br/blog/comportamento/">
+										<div class="tag comportamento" >
+											Comportamento										</div>
+									</a>
+																	<a href="https://www.petz.com.br/blog/curiosidades/">
+										<div class="tag curiosidades" >
+											Curiosidades										</div>
+									</a>
+															</div>
+							<a href="https://www.petz.com.br/blog/pets/gatos/por-que-gato-joga-areia-fora-da-caixa/">
+								<h3>Descubra por que gato joga areia fora da caixa!</h3>
+							</a>
+							<a href="https://www.petz.com.br/blog/pets/gatos/por-que-gato-joga-areia-fora-da-caixa/">
+								<p>Você varre, varre, varre e parece que a sujeira não tem fim? Calma, muitos tutores [&hellip;]</p>
+							</a>
+							<a href="https://www.petz.com.br/blog/pets/gatos/por-que-gato-joga-areia-fora-da-caixa/">
+								<div class="meta-post">
+									<span>28 ago 2024</span>
+									<span>|</span>
+									<span>5 min de leitura</span>
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<div class="borda-post"></div>
+									<div class="post-padrao">
+						<a href="https://www.petz.com.br/blog/pets/gatos/toxoplasmose/">
+							<img width="900" height="540" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20900%20540'%3E%3C/svg%3E" alt="" data-lazy-src="https://www.petz.com.br/blog/wp-content/uploads/2024/08/banho_e_tosa_petz.jpg"><noscript><img width="900" height="540" src="https://www.petz.com.br/blog/wp-content/uploads/2024/08/banho_e_tosa_petz.jpg" alt=""></noscript>
+						</a>
+						<div class="info">
+							<div class="tags-post">
+																	<a href="https://www.petz.com.br/blog/pets/gatos/">
+										<div class="tag gatos" style='background: #d19f72; border-color: #d19f72; color: #fff;'>
+											Gatos										</div>
+									</a>
+																	<a href="https://www.petz.com.br/blog/saude-e-cuidados/">
+										<div class="tag saude-e-cuidados" >
+											Saúde e Cuidados										</div>
+									</a>
+															</div>
+							<a href="https://www.petz.com.br/blog/pets/gatos/toxoplasmose/">
+								<h3>Mitos e verdades sobre toxoplasmose, a doença do gato</h3>
+							</a>
+							<a href="https://www.petz.com.br/blog/pets/gatos/toxoplasmose/">
+								<p>A toxoplasmose é um problema de saúde que gera grande preocupação, principalmente entre as pessoas [&hellip;]</p>
+							</a>
+							<a href="https://www.petz.com.br/blog/pets/gatos/toxoplasmose/">
+								<div class="meta-post">
+									<span>27 ago 2024</span>
+									<span>|</span>
+									<span>5 min de leitura</span>
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<div class="borda-post"></div>
+									<div class="post-padrao">
+						<a href="https://www.petz.com.br/blog/cachorros/frutas-que-cachorro-nao-pode-comer/">
+							<img width="900" height="540" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20900%20540'%3E%3C/svg%3E" alt="" data-lazy-src="https://www.petz.com.br/blog/wp-content/uploads/2024/08/banho_e_tosa_petz.jpg"><noscript><img width="900" height="540" src="https://www.petz.com.br/blog/wp-content/uploads/2024/08/banho_e_tosa_petz.jpg" alt=""></noscript>
+						</a>
+						<div class="info">
+							<div class="tags-post">
+																	<a href="https://www.petz.com.br/blog/cachorros/alimentacao/">
+										<div class="tag alimentacao" >
+											Alimentação										</div>
+									</a>
+																	<a href="https://www.petz.com.br/blog/cachorros/">
+										<div class="tag cachorros" >
+											Cachorros										</div>
+									</a>
+															</div>
+							<a href="https://www.petz.com.br/blog/cachorros/frutas-que-cachorro-nao-pode-comer/">
+								<h3>Confira a lista de frutas que cachorro não pode comer</h3>
+							</a>
+							<a href="https://www.petz.com.br/blog/cachorros/frutas-que-cachorro-nao-pode-comer/">
+								<p>Não há como negar que os pets adoram pedir e, é claro, ganhar um petisco [&hellip;]</p>
+							</a>
+							<a href="https://www.petz.com.br/blog/cachorros/frutas-que-cachorro-nao-pode-comer/">
+								<div class="meta-post">
+									<span>26 ago 2024</span>
+									<span>|</span>
+									<span>5 min de leitura</span>
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<div class="borda-post"></div>
+							</div>
+
+		</div>		
+
+	</section>
+
+</main>
+
+
+
+
+<footer>
+	<div class="container">
+		<div class="grid">
+
+			<div class="logo visible-mobile">
+				<svg width="94" height="22" viewBox="0 0 94 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M18.4977 1.11941C12.9587 0.898713 5.75477 1.02762 0.925765 1.00907C0.821275 1.00711 0.717759 1.02664 0.621081 1.06473C0.524404 1.10379 0.435541 1.16141 0.361324 1.23465C0.287106 1.30789 0.227537 1.3948 0.187499 1.49147C0.147461 1.58815 0.125977 1.69167 0.125977 1.79616V6.33805C0.125977 7.42397 1.89059 6.91226 2.22359 10.13C2.30366 10.9464 2.30366 11.7686 2.22359 12.585C1.90621 15.8183 0.125977 15.3935 0.125977 16.4345V20.9715C0.129883 21.1815 0.215817 21.3807 0.365228 21.5282C0.514639 21.6747 0.715808 21.7577 0.925765 21.7586H15.5944C16.3815 21.7586 16.4909 20.8094 16.4909 19.7128C16.4909 18.8739 16.7243 17.5234 15.6882 17.3945C14.3767 17.2314 13.4226 16.6552 12.2976 15.6318C11.9646 15.3271 11.7498 15.2441 12.3601 14.5019C12.9714 13.7598 12.9607 14.1006 13.3571 14.3555C14.5319 15.2842 15.9665 15.4306 17.0289 15.4697C22.0562 15.5322 26.0688 13.5391 26.143 8.65051C26.1928 5.52948 24.0708 1.1575 18.4977 1.11844V1.11941ZM14.527 9.38877C14.5104 9.54307 14.4333 9.68369 14.3132 9.78232C14.1931 9.87997 14.0397 9.92783 13.8845 9.91318H13.1394C12.9851 9.92685 12.8308 9.87997 12.7097 9.78232C12.5896 9.68466 12.5115 9.54307 12.4939 9.38877V5.63104C12.5115 5.47674 12.5896 5.33515 12.7097 5.23749C12.8308 5.13984 12.9841 5.09199 13.1394 5.10663H13.8845C14.0388 5.09296 14.1931 5.13984 14.3132 5.23749C14.4333 5.33515 14.5104 5.47674 14.527 5.63104V9.38877Z" fill="#175EA8"/>
+	<path d="M49.9062 14.0866H40.3547C38.6106 14.0573 40.4172 15.8648 38.5686 15.8512C37.9338 15.8512 37.6614 15.8697 37.6614 14.944V12.6754C37.6614 12.3503 37.5852 11.862 38.4719 11.9411C48.4375 12.8376 50.5146 11.3698 50.5127 8.18531C50.5127 4.56039 45.6056 2.59167 38.6379 2.59167C30.3949 2.59167 26.771 5.5838 26.8052 12.2009C26.8345 18.0728 30.0414 21.7651 38.6379 21.7651C42.9806 21.7651 50.3428 20.3931 50.3428 14.5211C50.3428 14.4059 50.2969 14.2955 50.2148 14.2135C50.1328 14.1315 50.0225 14.0856 49.9072 14.0856L49.9062 14.0866ZM37.6057 6.16875C37.6057 5.56329 38.4895 5.6629 38.9778 5.6629C39.1291 5.64728 39.2795 5.6922 39.3987 5.78595C39.5178 5.88067 39.594 6.01739 39.6125 6.16875V8.35327C39.6125 8.95873 38.7288 8.85913 38.2405 8.85717C38.0901 8.87182 37.9397 8.82788 37.8215 8.73413C37.7034 8.64038 37.6262 8.50366 37.6067 8.35425V6.16973L37.6057 6.16875Z" fill="#175EA8"/>
+	<path d="M66.4762 3.45203C66.1187 3.45203 65.773 3.3241 65.5016 3.09266C65.2301 2.86025 65.0504 2.53897 64.9947 2.18546C64.8981 1.46379 64.5963 1.39836 64.1559 1.39836H55.3729C55.1981 1.39641 55.0281 1.45305 54.8885 1.55852C54.7498 1.66399 54.6493 1.81242 54.6043 1.98136C54.1952 3.37098 53.2821 4.55748 52.0448 5.30941C51.9364 5.38168 51.8466 5.48031 51.7851 5.59554C51.7235 5.71077 51.6923 5.83968 51.6933 5.97053V9.22242C51.6933 10.6101 53.3485 9.46851 53.3924 10.82C53.3719 11.2605 53.1298 14.9869 53.0985 15.6696C52.8358 21.0796 57.617 21.77 62.11 21.77C71.853 21.77 71.8139 15.3551 71.2026 11.0173C71.1889 10.8132 71.102 10.6208 70.9575 10.4763C70.813 10.3318 70.6206 10.2449 70.4165 10.2312H66.3912C66.1822 10.2312 65.982 10.3142 65.8346 10.4617C65.6871 10.6091 65.6041 10.8093 65.6041 11.0183V13.3942C65.6041 13.5973 65.524 13.7926 65.3795 13.9362C65.2359 14.0807 65.0416 14.1618 64.8375 14.1618C64.2076 14.1618 63.7204 14.3034 63.7047 13.3932V8.47536C63.7047 8.27126 63.7858 8.07596 63.9293 7.9324C64.0739 7.78885 64.2692 7.7078 64.4723 7.7078H70.3071C70.4116 7.70975 70.5151 7.69022 70.6128 7.65214C70.7095 7.61308 70.7983 7.55546 70.8726 7.48222C70.9468 7.40898 71.0063 7.32207 71.0464 7.22539C71.0864 7.12871 71.1079 7.0252 71.1079 6.92071C71.1284 2.33389 71.4409 3.65808 66.4762 3.45398V3.45203Z" fill="#175EA8"/>
+	<path d="M93.0743 9.12624C93.2842 9.11745 93.4825 9.03054 93.6309 8.88308C93.7794 8.73464 93.8663 8.53641 93.8741 8.32646V4.22205C93.8741 4.11756 93.8536 4.01404 93.8126 3.91737C93.7725 3.82069 93.713 3.73378 93.6387 3.66053C93.5645 3.58729 93.4756 3.52968 93.379 3.49062C93.2823 3.45156 93.1778 3.433 93.0733 3.43495H73.4956C73.2866 3.43495 73.0864 3.51796 72.939 3.66542C72.7915 3.81287 72.7085 4.01307 72.7085 4.22205V12.3762C72.7085 12.5852 72.7915 12.7853 72.939 12.9328C73.0864 13.0803 73.2866 13.1633 73.4956 13.1633C73.4956 13.1633 75.7768 14.0207 77.3354 9.49147C77.6215 8.6575 78.1459 8.80398 78.6996 9.02956C79.0961 9.17897 79.1195 9.60084 78.9984 10.0081C78.0307 13.3439 76.9526 15.6437 73.4907 15.9952C73.2856 16.005 73.0913 16.0919 72.9458 16.2374C72.8003 16.3829 72.7144 16.5773 72.7036 16.7823V20.8789C72.7017 20.9834 72.7212 21.0869 72.7593 21.1836C72.7983 21.2803 72.856 21.3692 72.9292 21.4434C73.0025 21.5176 73.0894 21.5772 73.186 21.6172C73.2827 21.6572 73.3862 21.6787 73.4907 21.6787H93.0684C93.1729 21.6807 93.2764 21.6611 93.3741 21.623C93.4708 21.584 93.5596 21.5264 93.6338 21.4531C93.7081 21.3799 93.7676 21.293 93.8077 21.1963C93.8477 21.0996 93.8692 20.9961 93.8692 20.8916V12.7355C93.8653 12.5256 93.7794 12.3264 93.6299 12.1789C93.4805 12.0324 93.2794 11.9494 93.0694 11.9484C93.0694 11.9484 90.7882 11.093 89.2277 15.6359C88.9445 16.4698 88.4201 16.3204 87.8664 16.0978C87.4699 15.9484 87.4465 15.5265 87.5646 15.1173C88.5402 11.7678 89.6212 9.46803 93.0743 9.12721V9.12624Z" fill="#175EA8"/>
+</svg>
+			</div>
+			
+			<div class="item">
+				<h3>Produto para cachorro</h3>
+				<ul>
+					<li><a href="https://www.petz.com.br/cachorro/racao/racao-seca">Ração seca</a></li>
+					<li><a href="https://www.petz.com.br/cachorro/racao/racao-umida">Ração úmida</a></li>
+					<li><a href="https://www.petz.com.br/cachorro/farmacia">Medicamentos</a></li>
+					<li><a href="https://www.petz.com.br/cachorro/tapetes-fraldas-e-banheiros">Tapete higiênico</a></li>
+				</ul>
+			</div>
+
+			<div class="item">
+				<h3>Produto para gato</h3>
+				<ul>
+					<li><a href="https://www.petz.com.br/gato/racao/racao-seca">Ração seca</a></li>
+					<li><a href="https://www.petz.com.br/gato/racao/racao-umida">Ração úmida</a></li>
+					<li><a href="https://www.petz.com.br/gato/farmacia/antipulgas-e-carrapatos">Antipulgas</a></li>
+					<li><a href="https://www.petz.com.br/gato/areias-e-banheiros/caixas-de-areia">Caixa de areia</a></li>
+				</ul>
+			</div>
+
+			<div class="item">
+				<h3>Produtos para outros pets</h3>
+				<ul>
+					<li><a href="https://www.petz.com.br/outros-pets/coelhos/racao">Ração para hamster</a></li>
+					<li><a href="https://www.petz.com.br/passaros/alimentacao">Ração para pássaros</a></li>
+					<li><a href="https://www.petz.com.br/peixes/alimentacao/alimento-base">Ração para peixes</a></li>
+					<li><a href="https://www.petz.com.br/outros-pets/tartarugas/racao">Ração para tartaruga</a></li>
+				</ul>
+			</div>
+
+			<div class="item">
+				<ul>
+					<li><a href="https://www.petz.com.br/">petz.com.br</a></li>
+					<li><a href="https://www.petz.com.br/nossas-lojas">Nossas lojas</a></li>
+					<li><a href="https://www.petz.com.br/atendimento-inteligente">Atendimento</a></li>
+					<li><a href="https://www.petz.com.br/black-friday">Black friday petz</a></li>
+				</ul>
+			</div>
+
+			<div class="item visible-desktop">
+				<h3>Redes sociais</h3>
+				<div class="social">
+					<a href="https://www.instagram.com/petz/" target="_blank">
+						<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.84 3.46C15.6027 3.46 15.3707 3.53038 15.1733 3.66224C14.976 3.79409 14.8222 3.98151 14.7313 4.20078C14.6405 4.42005 14.6168 4.66133 14.6631 4.89411C14.7094 5.12689 14.8236 5.34071 14.9915 5.50853C15.1593 5.67635 15.3731 5.79064 15.6059 5.83694C15.8387 5.88324 16.0799 5.85948 16.2992 5.76866C16.5185 5.67783 16.7059 5.52402 16.8378 5.32668C16.9696 5.12935 17.04 4.89734 17.04 4.66C17.04 4.34174 16.9136 4.03652 16.6885 3.81147C16.4635 3.58643 16.1583 3.46 15.84 3.46ZM20.44 5.88C20.4206 5.0503 20.2652 4.2294 19.98 3.45C19.7257 2.78313 19.33 2.17928 18.82 1.68C18.3248 1.16743 17.7196 0.774176 17.05 0.53C16.2727 0.236161 15.4508 0.07721 14.62 0.0599999C13.56 -5.58794e-08 13.22 0 10.5 0C7.78 0 7.44 -5.58794e-08 6.38 0.0599999C5.54915 0.07721 4.72734 0.236161 3.95 0.53C3.28168 0.776649 2.67693 1.16956 2.18 1.68C1.66743 2.17518 1.27418 2.78044 1.03 3.45C0.736161 4.22734 0.57721 5.04915 0.56 5.88C0.5 6.94 0.5 7.28 0.5 10C0.5 12.72 0.5 13.06 0.56 14.12C0.57721 14.9508 0.736161 15.7727 1.03 16.55C1.27418 17.2196 1.66743 17.8248 2.18 18.32C2.67693 18.8304 3.28168 19.2234 3.95 19.47C4.72734 19.7638 5.54915 19.9228 6.38 19.94C7.44 20 7.78 20 10.5 20C13.22 20 13.56 20 14.62 19.94C15.4508 19.9228 16.2727 19.7638 17.05 19.47C17.7196 19.2258 18.3248 18.8326 18.82 18.32C19.3322 17.8226 19.7283 17.2182 19.98 16.55C20.2652 15.7706 20.4206 14.9497 20.44 14.12C20.44 13.06 20.5 12.72 20.5 10C20.5 7.28 20.5 6.94 20.44 5.88ZM18.64 14C18.6327 14.6348 18.5178 15.2637 18.3 15.86C18.1403 16.2952 17.8839 16.6884 17.55 17.01C17.2256 17.3405 16.8332 17.5964 16.4 17.76C15.8037 17.9778 15.1748 18.0927 14.54 18.1C13.54 18.15 13.17 18.16 10.54 18.16C7.91 18.16 7.54 18.16 6.54 18.1C5.88089 18.1123 5.22459 18.0109 4.6 17.8C4.18578 17.6281 3.81136 17.3728 3.5 17.05C3.16809 16.7287 2.91484 16.3352 2.76 15.9C2.51586 15.2952 2.38044 14.6519 2.36 14C2.36 13 2.3 12.63 2.3 10C2.3 7.37 2.3 7 2.36 6C2.36448 5.35106 2.48295 4.70795 2.71 4.1C2.88605 3.67791 3.15627 3.30166 3.5 3C3.80381 2.65617 4.17929 2.3831 4.6 2.2C5.20955 1.98004 5.852 1.86508 6.5 1.86C7.5 1.86 7.87 1.8 10.5 1.8C13.13 1.8 13.5 1.8 14.5 1.86C15.1348 1.86728 15.7637 1.98225 16.36 2.2C16.8144 2.36865 17.2223 2.64285 17.55 3C17.8777 3.30718 18.1338 3.68273 18.3 4.1C18.5223 4.70893 18.6373 5.35178 18.64 6C18.69 7 18.7 7.37 18.7 10C18.7 12.63 18.69 13 18.64 14ZM10.5 4.87C9.48581 4.87198 8.49496 5.17453 7.65265 5.73942C6.81035 6.30431 6.15438 7.1062 5.76763 8.04375C5.38089 8.98131 5.28072 10.0125 5.47979 11.0069C5.67886 12.0014 6.16824 12.9145 6.88608 13.631C7.60392 14.3474 8.51801 14.835 9.51286 15.0321C10.5077 15.2293 11.5387 15.1271 12.4755 14.7385C13.4123 14.35 14.2129 13.6924 14.7761 12.849C15.3394 12.0056 15.64 11.0142 15.64 10C15.6413 9.3251 15.5092 8.65661 15.2512 8.03296C14.9933 7.40931 14.6146 6.84281 14.1369 6.36605C13.6592 5.88929 13.0919 5.51168 12.4678 5.25493C11.8436 4.99818 11.1749 4.86736 10.5 4.87ZM10.5 13.33C9.84139 13.33 9.19757 13.1347 8.64995 12.7688C8.10234 12.4029 7.67552 11.8828 7.42348 11.2743C7.17144 10.6659 7.1055 9.99631 7.23398 9.35035C7.36247 8.70439 7.67963 8.11104 8.14533 7.64533C8.61104 7.17963 9.20439 6.86247 9.85035 6.73398C10.4963 6.6055 11.1659 6.67144 11.7743 6.92348C12.3828 7.17552 12.9029 7.60234 13.2688 8.14995C13.6347 8.69757 13.83 9.34139 13.83 10C13.83 10.4373 13.7439 10.8703 13.5765 11.2743C13.4092 11.6784 13.1639 12.0454 12.8547 12.3547C12.5454 12.6639 12.1784 12.9092 11.7743 13.0765C11.3703 13.2439 10.9373 13.33 10.5 13.33Z" fill="#1D1D1D"/>
+</svg>
+					</a>
+					<a href="https://www.linkedin.com/company/petz/" target="_blank">
+						<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.9701 -0.00010431H2.03006C1.83964 -0.00274893 1.65056 0.0321432 1.47362 0.102579C1.29669 0.173016 1.13536 0.277616 0.998856 0.410408C0.86235 0.543199 0.75334 0.70158 0.678051 0.876505C0.602761 1.05143 0.562667 1.23947 0.560059 1.4299V18.5699C0.562667 18.7603 0.602761 18.9484 0.678051 19.1233C0.75334 19.2982 0.86235 19.4566 0.998856 19.5894C1.13536 19.7222 1.29669 19.8268 1.47362 19.8972C1.65056 19.9676 1.83964 20.0025 2.03006 19.9999H18.9701C19.1605 20.0025 19.3496 19.9676 19.5265 19.8972C19.7034 19.8268 19.8648 19.7222 20.0013 19.5894C20.1378 19.4566 20.2468 19.2982 20.3221 19.1233C20.3974 18.9484 20.4375 18.7603 20.4401 18.5699V1.4299C20.4375 1.23947 20.3974 1.05143 20.3221 0.876505C20.2468 0.70158 20.1378 0.543199 20.0013 0.410408C19.8648 0.277616 19.7034 0.173016 19.5265 0.102579C19.3496 0.0321432 19.1605 -0.00274893 18.9701 -0.00010431ZM6.59006 16.7399H3.59006V7.7399H6.59006V16.7399ZM5.09006 6.4799C4.67632 6.4799 4.27953 6.31554 3.98697 6.02298C3.69442 5.73043 3.53006 5.33363 3.53006 4.9199C3.53006 4.50616 3.69442 4.10937 3.98697 3.81681C4.27953 3.52425 4.67632 3.3599 5.09006 3.3599C5.30975 3.33498 5.53224 3.35675 5.74293 3.42378C5.95363 3.49081 6.1478 3.60159 6.31272 3.74886C6.47763 3.89613 6.60958 4.07657 6.69993 4.27838C6.79028 4.48018 6.83698 4.69879 6.83698 4.9199C6.83698 5.141 6.79028 5.35961 6.69993 5.56141C6.60958 5.76322 6.47763 5.94366 6.31272 6.09093C6.1478 6.23821 5.95363 6.34898 5.74293 6.41601C5.53224 6.48304 5.30975 6.50481 5.09006 6.4799ZM17.4101 16.7399H14.4101V11.9099C14.4101 10.6999 13.9801 9.9099 12.8901 9.9099C12.5527 9.91237 12.2242 10.0182 11.9489 10.2131C11.6735 10.408 11.4645 10.6826 11.3501 10.9999C11.2718 11.2349 11.2379 11.4825 11.2501 11.7299V16.7299H8.25006C8.25006 16.7299 8.25006 8.5499 8.25006 7.7299H11.2501V8.9999C11.5226 8.527 11.919 8.13741 12.3965 7.8731C12.874 7.60878 13.4146 7.47975 13.9601 7.4999C15.9601 7.4999 17.4101 8.7899 17.4101 11.5599V16.7399Z" fill="#1D1D1D"/>
+</svg>
+					</a>
+					<a href="https://www.facebook.com/petzbr" target="_blank">
+						<svg width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.61986 3.32003H10.4999V0.14003C9.58961 0.045377 8.67502 -0.00135428 7.75986 2.98641e-05C5.03986 2.98641e-05 3.17986 1.66003 3.17986 4.70003V7.32003H0.109863V10.88H3.17986V20H6.85986V10.88H9.91986L10.3799 7.32003H6.85986V5.05003C6.85986 4.00003 7.13986 3.32003 8.61986 3.32003Z" fill="#1D1D1D"/>
+</svg>
+					</a>
+					<a href="https://www.youtube.com/petztube" target="_blank">
+						<svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.5 5.70998C22.5495 4.27864 22.2365 2.858 21.59 1.57998C21.1514 1.05558 20.5427 0.701694 19.87 0.579984C17.0875 0.327509 14.2936 0.224028 11.5 0.269984C8.71667 0.221942 5.93274 0.322084 3.16003 0.569984C2.61185 0.669701 2.10454 0.926826 1.70003 1.30998C0.800027 2.13998 0.700027 3.55998 0.600027 4.75998C0.454939 6.91755 0.454939 9.08242 0.600027 11.24C0.628957 11.9154 0.729521 12.5858 0.900027 13.24C1.0206 13.745 1.26455 14.2123 1.61003 14.6C2.01729 15.0034 2.53641 15.2752 3.10003 15.38C5.25594 15.6461 7.42824 15.7564 9.60003 15.71C13.1 15.76 16.17 15.71 19.8 15.43C20.3775 15.3316 20.9112 15.0595 21.33 14.65C21.61 14.3699 21.8191 14.0271 21.94 13.65C22.2977 12.5526 22.4733 11.4041 22.46 10.25C22.5 9.68998 22.5 6.30998 22.5 5.70998ZM9.24003 10.85V4.65998L15.16 7.76998C13.5 8.68998 11.31 9.72998 9.24003 10.85Z" fill="#1D1D1D"/>
+</svg>
+					</a>
+					<a href="https://www.tiktok.com/@petz" target="_blank">
+						<svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.9992 0H9.64501V13.6232C9.64501 15.2464 8.35499 16.5797 6.74958 16.5797C5.14418 16.5797 3.85413 15.2464 3.85413 13.6232C3.85413 12.029 5.11552 10.7246 6.6636 10.6667V7.24639C3.25211 7.30433 0.5 10.1159 0.5 13.6232C0.5 17.1594 3.30944 20 6.77826 20C10.247 20 13.0565 17.1304 13.0565 13.6232V6.63767C14.3179 7.56522 15.8659 8.11594 17.5 8.14495V4.72464C14.9773 4.63768 12.9992 2.55072 12.9992 0Z" fill="#1D1D1D"/>
+</svg>
+					</a>
+					<a href="https://br.pinterest.com/somospetz/" target="_blank">
+						<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M10.5 0C4.97656 0 0.5 4.47656 0.5 10C0.5 14.2383 3.13672 17.8555 6.85547 19.3125C6.76953 18.5195 6.6875 17.3086 6.89063 16.4453C7.07422 15.6641 8.0625 11.4766 8.0625 11.4766C8.0625 11.4766 7.76172 10.8789 7.76172 9.99219C7.76172 8.60156 8.56641 7.5625 9.57031 7.5625C10.4219 7.5625 10.8359 8.20312 10.8359 8.97266C10.8359 9.83203 10.2891 11.1133 10.0078 12.3008C9.77344 13.2969 10.5078 14.1094 11.4883 14.1094C13.2656 14.1094 14.6328 12.2344 14.6328 9.53125C14.6328 7.13672 12.9141 5.46094 10.457 5.46094C7.61328 5.46094 5.94141 7.59375 5.94141 9.80078C5.94141 10.6602 6.27344 11.582 6.6875 12.082C6.76953 12.1797 6.78125 12.2695 6.75781 12.3672C6.68359 12.6836 6.51172 13.3633 6.48047 13.5C6.4375 13.6836 6.33594 13.7227 6.14453 13.6328C4.89453 13.0508 4.11328 11.2266 4.11328 9.75781C4.11328 6.60156 6.40625 3.70703 10.7188 3.70703C14.1875 3.70703 16.8828 6.17969 16.8828 9.48438C16.8828 12.9297 14.7109 15.7031 11.6953 15.7031C10.6836 15.7031 9.73047 15.1758 9.40234 14.5547C9.40234 14.5547 8.90234 16.4648 8.78125 16.9336C8.55469 17.8008 7.94531 18.8906 7.53906 19.5547C8.47656 19.8438 9.46875 20 10.5 20C16.0234 20 20.5 15.5234 20.5 10C20.5 4.47656 16.0234 0 10.5 0Z" fill="#1D1D1D"/>
+</svg>
+					</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="copy">
+			<p>Copyright ©2023 www.petz.com.br/blog é uma iniciativa da <a href="https://www.petz.com.br/" target="_blank">Petz®</a> <br>
+				Powered by <br>
+				<a href="https://gearseo.com.br/" target="_blank">Agência Especializada em SEO</a></p>
+			</div>
+		</div>
+
+	</footer>
+
+	            <script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://www.petz.com.br/blog/wp-content/cache/min/1/web/latest/handtalk.min.js" defer></script>
+			<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+                var ht = new HT( {
+
+        token: "6b1d47700e2131edfc030061faac94b1",
+        pageSpeech: true
+
+});
+			</script>
+			<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://www.petz.com.br/blog/wp-content/plugins/bb2c182b2b/vendor/slick/slick.min.js" id="slick-min-js-js" defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://www.petz.com.br/blog/wp-content/cache/min/1/blog/wp-content/plugins/makestories-helper/assets/js/ms-script.js" id="script-main-js" defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://www.petz.com.br/blog/wp-content/cache/min/1/player/StoryPlayer.js" id="ms-story-player-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="rocket-browser-checker-js-after">
+/* <![CDATA[ */
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket-preload-links-js-extra">
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/blog(\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index.php\/)?(.*)wp-json(\/.*|$))|\/refer\/|\/go\/|\/recommend\/|\/recommends\/|\/linkout\/.+","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/www.petz.com.br\/blog","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="rocket-preload-links-js-after">
+/* <![CDATA[ */
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+/* ]]> */
+</script>
+<script type="text/javascript" id="advanced-ads-pro/front-js-extra">
+/* <![CDATA[ */
+var advanced_ads_cookies = {"cookie_path":"\/blog\/","cookie_domain":""};
+var advadsCfpInfo = {"cfpExpHours":"3","cfpClickLimit":"3","cfpBan":"7","cfpPath":"https:\/\/www.petz.com.br\/blog","cfpDomain":"blog.petz.com.br"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.petz.com.br/blog/wp-content/plugins/90b5e7c22f/assets/js/advanced-ads-pro.min.js" id="advanced-ads-pro/front-js"></script>
+<script type="text/javascript" id="advanced-ads-pro/cache_busting-js-extra">
+/* <![CDATA[ */
+var advanced_ads_pro_ajax_object = {"ajax_url":"https:\/\/www.petz.com.br\/blog\/ajax-petz","lazy_load_module_enabled":"","lazy_load":{"default_offset":0,"offsets":[]},"moveintohidden":"","wp_timezone_offset":"-10800","the_id":"2472924","is_singular":"1"};
+var advanced_ads_responsive = {"reload_on_resize":"0"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.petz.com.br/blog/wp-content/plugins/90b5e7c22f/assets/js/base.min.js" id="advanced-ads-pro/cache_busting-js"></script>
+<script type="text/javascript" id="advadsTrackingScript-js-extra">
+/* <![CDATA[ */
+var advadsTracking = {"impressionActionName":"aatrack-records","clickActionName":"aatrack-click","targetClass":"advads-target","blogId":"1","frontendPrefix":"advads-"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.petz.com.br/blog/wp-content/plugins/408b057419/public/assets/js/dist/tracking.min.js" id="advadsTrackingScript-js"></script>
+<script type="rocketlazyloadscript">window.advads_admin_bar_items = [];</script><script>window.advads_passive_placements = {"super-banner-home_1":{"type":"group","id":660,"elementid":["advads-b7aebc3047633d1e28cca22e3633af8c"],"ads":{"2473720":{"id":2473720,"title":"24_07_PetzTV - Super Banner Mobile","expiry_date":1725159420,"visitors":[{"type":"mobile","value":["mobile","tablet"]}],"content":"<div data-advads-trackid=\"2473720\" data-advads-trackbid=\"1\" class=\"advads-target\" id=\"advads-796242483\"><a data-no-instant=\"1\" href=\"https:\/\/www.youtube.com\/@Petz_TV\" rel=\"noopener sponsored\" class=\"adv-link\" target=\"_blank\" aria-label=\"Banners PetzTV_Super Banner Mobile 1\"><img src=\"https:\/\/www.petz.com.br\/blog\/wp-content\/uploads\/2024\/06\/Banners-PetzTV_Super-Banner-Mobile-1.png\" alt=\"\"  width=\"328\" height=\"90\"   \/><\/a><\/div>","once_per_page":0,"debugmode":false,"blog_id":1,"type":"image","position":"none","tracking_enabled":true,"privacy":{"ignore":false,"needs_consent":false}},"2473718":{"id":2473718,"title":"24_07_PetzTV - Super Banner","expiry_date":1725159420,"visitors":[{"type":"mobile","value":["desktop"]}],"content":"<div data-advads-trackid=\"2473718\" data-advads-trackbid=\"1\" class=\"advads-target\" id=\"advads-1837219524\"><a data-no-instant=\"1\" href=\"https:\/\/www.youtube.com\/@Petz_TV\" rel=\"noopener sponsored\" class=\"adv-link\" target=\"_blank\" aria-label=\"Banners PetzTV_Super Banner Desktop 1\"><img src=\"https:\/\/www.petz.com.br\/blog\/wp-content\/uploads\/2024\/06\/Banners-PetzTV_Super-Banner-Desktop-1.png\" alt=\"\"  width=\"728\" height=\"90\"   \/><\/a><\/div>","once_per_page":0,"debugmode":false,"blog_id":1,"type":"image","position":"none","tracking_enabled":true,"privacy":{"ignore":false,"needs_consent":false}}},"group_info":{"id":660,"name":"Super Banner","weights":{"2467389":5,"2467379":5,"2467271":6,"2467264":7,"2467258":8,"2467111":9,"2467251":10,"2473718":10,"2473720":10},"type":"ordered","ordered_ad_ids":[2473720,2473718],"ad_count":1},"placement_info":{"type":"default","name":"Super banner - Home","item":"group_660","options":{"placement_position":"center"},"key":"super-banner-home","id":"super-banner-home"},"test_id":null,"group_wrap":[{"before":"<div class=\"advads-super-banner-home\" style=\"text-align: center; \" id=\"advads-768884320\">","after":"<\/div>"}],"inject_before":[""]},"arroba-banner_3":{"type":"group","id":662,"elementid":["advads-58f4b55f42e466d7ce23410bd6f962a7"],"ads":{"2473773":{"id":2473773,"title":"24_07_PetzTV \u2013 Arroba Banner Mobile","expiry_date":1725159420,"visitors":[{"type":"mobile","value":["desktop"]}],"content":"<div data-advads-trackid=\"2473773\" data-advads-trackbid=\"1\" class=\"advads-target\" id=\"advads-393679369\"><a data-no-instant=\"1\" href=\"https:\/\/www.youtube.com\/@Petz_TV\" rel=\"noopener sponsored\" class=\"adv-link\" target=\"_blank\" aria-label=\"Banners PetzTV_Sidebar Desktop 1\"><img src=\"https:\/\/www.petz.com.br\/blog\/wp-content\/uploads\/2024\/07\/Banners-PetzTV_Sidebar-Desktop-1.png\" alt=\"\"  width=\"520\" height=\"275\"   \/><\/a><\/div>","once_per_page":0,"debugmode":false,"blog_id":1,"type":"image","position":"none","tracking_enabled":true,"privacy":{"ignore":false,"needs_consent":false}},"2473714":{"id":2473714,"title":"24_07_PetzTV \u2013 Arroba Banner","expiry_date":1725159420,"visitors":[{"type":"mobile","value":["mobile","tablet"]}],"content":"<div data-advads-trackid=\"2473714\" data-advads-trackbid=\"1\" class=\"advads-target\" id=\"advads-1673057793\"><a data-no-instant=\"1\" href=\"https:\/\/www.youtube.com\/@Petz_TV\" rel=\"noopener sponsored\" class=\"adv-link\" target=\"_blank\" aria-label=\"Banners PetzTV_Sidebar Mobile 1\"><img src=\"https:\/\/www.petz.com.br\/blog\/wp-content\/uploads\/2024\/06\/Banners-PetzTV_Sidebar-Mobile-1.png\" alt=\"\"  width=\"329\" height=\"275\"   \/><\/a><\/div>","once_per_page":0,"debugmode":false,"blog_id":1,"type":"image","position":"none","tracking_enabled":true,"privacy":{"ignore":false,"needs_consent":false}}},"group_info":{"id":662,"name":"Arroba Banner","weights":{"2467381":5,"2467276":6,"2467270":7,"2467263":8,"2467176":9,"2467257":10,"2473773":10,"2473714":10},"type":"ordered","ordered_ad_ids":[2473773,2473714],"ad_count":1},"placement_info":{"type":"default","name":"Arroba Banner","item":"group_662","options":{"placement_position":""},"key":"arroba-banner","id":"arroba-banner"},"test_id":null,"group_wrap":[{"before":"<div class=\"advads-arroba-banner\" id=\"advads-701498384\">","after":"<\/div>"}],"inject_before":[""]}};
+( window.advanced_ads_ready || jQuery( document ).ready ).call( null, function() {if ( !window.advanced_ads_pro ) {console.log("Advanced Ads Pro: cache-busting can not be initialized");} });</script><script>!function(){window.advanced_ads_ready_queue=window.advanced_ads_ready_queue||[],advanced_ads_ready_queue.push=window.advanced_ads_ready;for(var d=0,a=advanced_ads_ready_queue.length;d<a;d++)advanced_ads_ready(advanced_ads_ready_queue[d])}();</script><script id="advads-tracking">var advads_tracking_ads = {};var advads_tracking_urls = {"1":"https:\/\/www.petz.com.br\/blog\/wp-content\/ajax-handler.php"};var advads_tracking_methods = {"1":"frontend"};var advads_tracking_parallel = {"1":false};var advads_tracking_linkbases = {"1":"https:\/\/www.petz.com.br\/blog\/linkout\/"};</script><script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://www.petz.com.br/blog/wp-content/plugins/ffee7df689/assets/js/lazyload/17.8.3/lazyload.min.js"></script><script>function lazyLoadThumb(e,alt,l){var t='<img data-lazy-src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"><noscript><img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"></noscript>',a='<button class="play" aria-label="play Youtube video"></button>';if(l){t=t.replace('data-lazy-','');t=t.replace('loading="lazy"','');t=t.replace(/<noscript>.*?<\/noscript>/g,'');}t=t.replace('alt=""','alt="'+alt+'"');return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.parentNode.dataset.query.length?"":"&"+this.parentNode.dataset.query;e.setAttribute("src",t.replace("ID",this.parentNode.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow","accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.parentNode.replaceChild(e,this.parentNode)}document.addEventListener("DOMContentLoaded",function(){var exclusions=[];var e,t,p,u,l,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)(e=document.createElement("div")),(u='https://i.ytimg.com/vi/ID/hqdefault.jpg'),(u=u.replace('ID',a[t].dataset.id)),(l=exclusions.some(exclusion=>u.includes(exclusion))),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query",a[t].dataset.query),e.setAttribute("data-src",a[t].dataset.src),(e.innerHTML=lazyLoadThumb(a[t].dataset.id,a[t].dataset.alt,l)),a[t].appendChild(e),(p=e.querySelector(".play")),(p.onclick=lazyLoadYoutubeIframe)});</script>
+	<script src="https://www.petz.com.br/blog/themes/4550927d5c/assets/js/plugins/jquery.min.js?v=1696980550"></script>
+	<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://www.petz.com.br/blog/wp-content/cache/min/1/blog/wp-content/themes/petz2023/assets/js/plugins/jquery-mask.js" defer></script>
+	<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://www.petz.com.br/blog/wp-content/cache/min/1/blog/wp-content/themes/petz2023/assets/js/plugins/fancybox.js" defer></script>
+	<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://www.petz.com.br/blog/wp-content/cache/min/1/blog/wp-content/themes/petz2023/assets/js/plugins/swiper.js" defer></script>
+
+	<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://www.petz.com.br/blog/wp-content/cache/min/1/ajax/libs/lottie-web/5.12.2/lottie.min.js" defer></script>
+	
+	
+	<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://www.petz.com.br/blog/wp-content/cache/min/1/blog/wp-content/themes/petz2023/assets/js/main.js" defer></script>
+
+	
+
+</body>
+</html>
+<div id="linkedin" style="display: none;">
+	<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://www.petz.com.br/blog/wp-content/cache/min/1/in.js" data-rocket-type="text/javascript" defer>lang: pt_BR</script>
+	<script type="IN/Share" data-url="https://www.petz.com.br/blog/plantas/como-plantar-alface-americana/"></script>
+</div>
+
+<script type="rocketlazyloadscript">
+	$('[js-btn-linkedin]').on('click', function(e){
+		e.preventDefault();
+		$('#linkedin button').click();
+	});
+</script>
+
+<script type="rocketlazyloadscript">
+	$('.comentarios #respond .form-submit').append(`<svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path d="M11.5837 0.450684C11.2503 0.11735 10.7503 0.11735 10.417 0.450684L4.16699 6.70068L1.58366 4.11735C1.25033 3.78402 0.750326 3.78402 0.416992 4.11735C0.0836589 4.45068 0.0836589 4.95068 0.416992 5.28402L3.58366 8.45068C3.75033 8.61735 3.91699 8.70068 4.16699 8.70068C4.41699 8.70068 4.58366 8.61735 4.75033 8.45068L11.5837 1.61735C11.917 1.28402 11.917 0.784017 11.5837 0.450684Z"/>
+		</svg>
+		`);
+
+	$('#comment').on('input', function(){
+		$('#submit').addClass('azul');
+		$('.comentarios svg').addClass('azul');
+	});
+</script>
+<!-- Cached for great performance - Debug: cached@1724886704 -->
